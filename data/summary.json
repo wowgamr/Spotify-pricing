@@ -1,0 +1,15 @@
+[
+    {
+        "link": "/us/",
+        "title": "USA",
+        "originalRel": "us",
+        "rel": "us",
+        "currency": "USD",
+        "countryCode": "USA",
+        "internationalName": "United States",
+        "region": "Americas",
+        "price": 9.99,
+        "f_price": 14.99,
+        "convertedPrice": 9.99
+    }
+]
