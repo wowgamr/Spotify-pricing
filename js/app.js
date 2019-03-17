@@ -44,7 +44,7 @@ function fetchJSONFile(path, callback) {
   httpRequest.send();
 }
 
-fetchJSONFile('data/countries.json', formatData);
+fetchJSONFile('data/summary.json', formatData);
 
 function formatData(data){
   countries = data;
@@ -71,7 +71,6 @@ function formatData(data){
 
   drawMap();
   drawBarChart();
-  drawScatterPlot();
 }
 
 function drawMap(){
@@ -99,9 +98,7 @@ function drawMap(){
         if(!data)
           return;
 
-
-          // todo: Family plan
-        return '<div class="hoverinfo"><strong>{0}:</strong> ${1}<br>Local price: {2} {3}<br>Family plan:</div>'.format(data.internationalName, data.convertedPrice, data.currency, data.price);
+        return '<div class="hoverinfo"><strong>{0}:</strong> ${1}<br>Local price: {2} {3}<br>Family plan: {2} {4}</div>'.format(data.internationalName, data.convertedPrice, data.currency, data.price, data.f_price);
       },
       popupOnHover: true,
       highlightOnHover: true,
@@ -109,7 +106,7 @@ function drawMap(){
         if(!data)
           return fills.defaultFill;
 
-        return 'rgba(255, 255, 255, .9)';
+        return 'orange';
       },
       highlightBorderWidth: 0
     }
@@ -133,6 +130,7 @@ function updateMapColors(map){
       priceDifference: country.formattedPriceDifference,
       convertedPrice: country.formattedConvertedPrice,
       price: country.price,
+      f_price: country.f_price,
       currency: country.currency,
       region: country.region
     };
@@ -326,11 +324,4 @@ function redrawCharts(){
   d3.select('#bar-chart small').remove();
   d3.select('#bar-chart svg').remove();
   drawBarChart();
-
-  if(width > 400){
-    d3.select('#scatter-plot svg').remove();
-    d3.select('#scatter-plot small').remove();
-    d3.select('#scatter-plot div').remove();
-    drawScatterPlot();
-  }
 };
