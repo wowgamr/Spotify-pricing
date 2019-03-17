@@ -101,7 +101,7 @@ function drawMap(){
 
 
           // todo: Family plan
-        return '<div class="hoverinfo"><strong>{0}:</strong> ${1}<br>Local price: {2} {3}<br>Premium plan:</div>'.format(data.internationalName, data.convertedPrice, data.currency, data.price);
+        return '<div class="hoverinfo"><strong>{0}:</strong> ${1}<br>Local price: {2} {3}<br>Family plan:</div>'.format(data.internationalName, data.convertedPrice, data.currency, data.price);
       },
       popupOnHover: true,
       highlightOnHover: true,
@@ -223,8 +223,7 @@ function drawBarChart(){
     .append("svg:text")
     .attr("class", "nil")
     .attr("x", x(0))
-    .attr("y", y(base.internationalName))
-    .text("nil");
+    .attr("y", y(base.internationalName));
 
   var prices = bars.append("svg:text")
     .attr("class", "price")
