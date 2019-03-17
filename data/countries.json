@@ -1,1216 +1,1502 @@
 [
     {
-        "link": "/ph/",
-        "title": "Philippines",
-        "originalRel": "ph",
-        "rel": "ph",
-        "currency": "PHP",
-        "originalCurrency": "PHP",
-        "countryCode": "PHL",
-        "internationalName": "Philippines",
+        "rel": "BD",
+        "title": "Bangladesh",
         "region": "Asia",
-        "subRegion": "South-Eastern Asia",
-        "demonym": "Filipino",
-        "originalPrice": "Just 129PHP a month.",
-        "price": 129,
-        "catalogSize": 31135696,
-        "convertedPrice": 2.930968866976047,
-        "gdp": 6109.75932931084,
-        "_id": "536b9587ef2dc5284e21571a",
-        "__v": 0
+        "currency": "BDT"
     },
     {
-        "link": "/ar/",
-        "title": "Argentina",
-        "originalRel": "ar",
-        "rel": "ar",
-        "currency": "ARS",
-        "originalCurrency": "ARS",
-        "countryCode": "ARG",
-        "internationalName": "Argentina",
-        "region": "Americas",
-        "subRegion": "South America",
-        "demonym": "Argentinean",
-        "originalPrice": "36 ARS al mes.",
-        "price": 36,
-        "catalogSize": 31105873,
-        "convertedPrice": 4.498988852255455,
-        "gdp": null,
-        "_id": "536b9587ef2dc5284e2156ef",
-        "__v": 0
-    },
-    {
-        "link": "/my-en/",
-        "title": "Malaysia (English)",
-        "originalRel": "my-en",
-        "rel": "my",
-        "currency": "MYR",
-        "originalCurrency": "MYR",
-        "countryCode": "MYS",
-        "internationalName": "Malaysia",
-        "region": "Asia",
-        "subRegion": "South-Eastern Asia",
-        "demonym": "Malaysian",
-        "originalPrice": "14.9 MYR a month.",
-        "price": 14.9,
-        "catalogSize": 31168960,
-        "convertedPrice": 4.608430334606065,
-        "gdp": 22280.1484307907,
-        "_id": "536b9587ef2dc5284e21570e",
-        "__v": 0
-    },
-    {
-        "link": "/my-ms/",
-        "title": "Malaysia (Melayu)",
-        "originalRel": "my-ms",
-        "rel": "my",
-        "currency": "MYR",
-        "originalCurrency": "MYR",
-        "countryCode": "MYS",
-        "internationalName": "Malaysia",
-        "region": "Asia",
-        "subRegion": "South-Eastern Asia",
-        "demonym": "Malaysian",
-        "originalPrice": "14.9 MYR sebulan.",
-        "price": 14.9,
-        "catalogSize": 31168960,
-        "convertedPrice": 4.608430334606065,
-        "_id": "536b9587ef2dc5284e21570f",
-        "__v": 0
-    },
-    {
-        "link": "/tr/",
-        "title": "Türkiye",
-        "originalRel": "tr",
-        "rel": "tr",
-        "currency": "TRY",
-        "originalCurrency": "TRY",
-        "countryCode": "TUR",
-        "internationalName": "Turkey",
-        "region": "Asia",
-        "subRegion": "Western Asia",
-        "demonym": "Turkish",
-        "originalPrice": "Ayda 9.99 TRY.",
-        "price": 9.99,
-        "catalogSize": 31111004,
-        "convertedPrice": 4.817977857557618,
-        "gdp": 18551.3113401087,
-        "_id": "536b9587ef2dc5284e215723",
-        "__v": 0
-    },
-    {
-        "link": "/tw/",
-        "title": "台灣",
-        "originalRel": "tw",
-        "rel": "tw",
-        "currency": "TWD",
-        "originalCurrency": "TWD",
-        "countryCode": "TWN",
-        "internationalName": "Taiwan",
-        "region": "Asia",
-        "subRegion": "Eastern Asia",
-        "demonym": "Taiwanese",
-        "originalPrice": "每月新台幣  149 NTD。",
-        "price": 149,
-        "catalogSize": 31075734,
-        "convertedPrice": 4.946378271788547,
-        "_id": "536b9587ef2dc5284e215729",
-        "__v": 0
-    },
-    {
-        "link": "/cl/",
-        "title": "Chile",
-        "originalRel": "cl",
-        "rel": "cl",
-        "currency": "CLP",
-        "originalCurrency": "CLF",
-        "countryCode": "CHL",
-        "internationalName": "Chile",
-        "region": "Americas",
-        "subRegion": "South America",
-        "demonym": "Chilean",
-        "originalPrice": "CLP 3099 al mes.",
-        "price": 3099,
-        "catalogSize": 30779323,
-        "convertedPrice": 5.540542643678593,
-        "gdp": 21468.0880434628,
-        "_id": "536b9587ef2dc5284e2156f5",
-        "__v": 0
-    },
-    {
-        "link": "/bo/",
-        "title": "Bolivia",
-        "originalRel": "bo",
-        "rel": "bo",
-        "currency": "USD",
-        "originalCurrency": "BOB",
-        "countryCode": "BOL",
-        "internationalName": "Bolivia",
-        "region": "Americas",
-        "subRegion": "South America",
-        "demonym": "Bolivian",
-        "originalPrice": "USD $5.99 al mes.",
-        "price": 5.99,
-        "catalogSize": 31184185,
-        "convertedPrice": 5.99,
-        "gdp": 5749.21639644771,
-        "_id": "536b9587ef2dc5284e2156f3",
-        "__v": 0
-    },
-    {
-        "link": "/cr/",
-        "title": "Costa Rica",
-        "originalRel": "cr",
-        "rel": "cr",
-        "currency": "USD",
-        "originalCurrency": "CRC",
-        "countryCode": "CRI",
-        "internationalName": "Costa Rica",
-        "region": "Americas",
-        "subRegion": "Central America",
-        "demonym": "Costa Rican",
-        "originalPrice": "USD $5.99 al mes.",
-        "price": 5.99,
-        "catalogSize": 30911727,
-        "convertedPrice": 5.99,
-        "gdp": 13319.9635217205,
-        "_id": "536b9587ef2dc5284e2156f7",
-        "__v": 0
-    },
-    {
-        "link": "/ec/",
-        "title": "Ecuador",
-        "originalRel": "ec",
-        "rel": "ec",
-        "currency": "USD",
-        "originalCurrency": "USD",
-        "countryCode": "ECU",
-        "internationalName": "Ecuador",
-        "region": "Americas",
-        "subRegion": "South America",
-        "demonym": "Ecuadorean",
-        "originalPrice": "USD $5.99 al mes.",
-        "price": 5.99,
-        "catalogSize": 31031877,
-        "convertedPrice": 5.99,
-        "gdp": 10073.1567648985,
-        "_id": "536b9587ef2dc5284e2156fc",
-        "__v": 0
-    },
-    {
-        "link": "/sv/",
-        "title": "El Salvador",
-        "originalRel": "sv",
-        "rel": "sv",
-        "currency": "USD",
-        "originalCurrency": "SVC",
-        "countryCode": "SLV",
-        "internationalName": "El Salvador",
-        "region": "Americas",
-        "subRegion": "Central America",
-        "demonym": "Salvadoran",
-        "originalPrice": "USD $5.99 al mes.",
-        "price": 5.99,
-        "catalogSize": 30905759,
-        "convertedPrice": 5.99,
-        "gdp": 7575.46145264872,
-        "_id": "536b9587ef2dc5284e2156fd",
-        "__v": 0
-    },
-    {
-        "link": "/gt/",
-        "title": "Guatemala",
-        "originalRel": "gt",
-        "rel": "gt",
-        "currency": "USD",
-        "originalCurrency": "GTQ",
-        "countryCode": "GTM",
-        "internationalName": "Guatemala",
-        "region": "Americas",
-        "subRegion": "Central America",
-        "demonym": "Guatemalan",
-        "originalPrice": "USD $5.99 al mes.",
-        "price": 5.99,
-        "catalogSize": 30909533,
-        "convertedPrice": 5.99,
-        "gdp": 7111.71510812197,
-        "_id": "536b9587ef2dc5284e215702",
-        "__v": 0
-    },
-    {
-        "link": "/hn/",
-        "title": "Honduras",
-        "originalRel": "hn",
-        "rel": "hn",
-        "currency": "USD",
-        "originalCurrency": "HNL",
-        "countryCode": "HND",
-        "internationalName": "Honduras",
-        "region": "Americas",
-        "subRegion": "Central America",
-        "demonym": "Honduran",
-        "originalPrice": "USD $5.99 al mes.",
-        "price": 5.99,
-        "catalogSize": 30910519,
-        "convertedPrice": 5.99,
-        "gdp": 4499.86060367416,
-        "_id": "536b9587ef2dc5284e215703",
-        "__v": 0
-    },
-    {
-        "link": "/ni/",
-        "title": "Nicaragua",
-        "originalRel": "ni",
-        "rel": "ni",
-        "currency": "USD",
-        "originalCurrency": "NIO",
-        "countryCode": "NIC",
-        "internationalName": "Nicaragua",
-        "region": "Americas",
-        "subRegion": "Central America",
-        "demonym": "Nicaraguan",
-        "originalPrice": "USD $5.99 al mes.",
-        "price": 5.99,
-        "catalogSize": 30908651,
-        "convertedPrice": 5.99,
-        "gdp": 4328.46690703945,
-        "_id": "536b9587ef2dc5284e215715",
-        "__v": 0
-    },
-    {
-        "link": "/pa/",
-        "title": "Panamá",
-        "originalRel": "pa",
-        "rel": "pa",
-        "currency": "PAB",
-        "originalCurrency": "PAB",
-        "countryCode": "PAN",
-        "internationalName": "Panama",
-        "region": "Americas",
-        "subRegion": "Central America",
-        "demonym": "Panamanian",
-        "originalPrice": "USD $5.99 al mes.",
-        "price": 5.99,
-        "catalogSize": 30986723,
-        "convertedPrice": 5.99,
-        "gdp": 16946.3871979725,
-        "_id": "536b9587ef2dc5284e215717",
-        "__v": 0
-    },
-    {
-        "link": "/py/",
-        "title": "Paraguay",
-        "originalRel": "py",
-        "rel": "py",
-        "currency": "USD",
-        "originalCurrency": "PYG",
-        "countryCode": "PRY",
-        "internationalName": "Paraguay",
-        "region": "Americas",
-        "subRegion": "South America",
-        "demonym": "Paraguayan",
-        "originalPrice": "USD $5.99 al mes.",
-        "price": 5.99,
-        "catalogSize": 31175425,
-        "convertedPrice": 5.99,
-        "gdp": 7341.63166630591,
-        "_id": "536b9587ef2dc5284e215718",
-        "__v": 0
-    },
-    {
-        "link": "/do/",
-        "title": "República Dominicana",
-        "originalRel": "do",
-        "rel": "do",
-        "currency": "USD",
-        "originalCurrency": "DOP",
-        "countryCode": "DOM",
-        "internationalName": "Dominican Republic",
-        "region": "Americas",
-        "subRegion": "Caribbean",
-        "demonym": "Dominican",
-        "originalPrice": "USD $5.99 al mes.",
-        "price": 5.99,
-        "catalogSize": 30880141,
-        "convertedPrice": 5.99,
-        "gdp": 11208.3141392217,
-        "_id": "536b9587ef2dc5284e21571d",
-        "__v": 0
-    },
-    {
-        "link": "/uy/",
-        "title": "Uruguay",
-        "originalRel": "uy",
-        "rel": "uy",
-        "currency": "USD",
-        "originalCurrency": "UYI",
-        "countryCode": "URY",
-        "internationalName": "Uruguay",
-        "region": "Americas",
-        "subRegion": "South America",
-        "demonym": "Uruguayan",
-        "originalPrice": "USD $5.99 al mes.",
-        "price": 5.99,
-        "catalogSize": 30876403,
-        "convertedPrice": 5.99,
-        "gdp": 18279.5986028838,
-        "_id": "536b9587ef2dc5284e215726",
-        "__v": 0
-    },
-    {
-        "link": "/pe/",
-        "title": "Perú",
-        "originalRel": "pe",
-        "rel": "pe",
-        "currency": "PEN",
-        "originalCurrency": "PEN",
-        "countryCode": "PER",
-        "internationalName": "Peru",
-        "region": "Americas",
-        "subRegion": "South America",
-        "demonym": "Peruvian",
-        "originalPrice": "PEN 16.9 al mes.",
-        "price": 16.9,
-        "catalogSize": 31022268,
-        "convertedPrice": 6.031139235808265,
-        "gdp": 11805.430662311,
-        "_id": "536b9587ef2dc5284e215719",
-        "__v": 0
-    },
-    {
-        "link": "/co/",
-        "title": "Colombia",
-        "originalRel": "co",
-        "rel": "co",
-        "currency": "COP",
-        "originalCurrency": "COP",
-        "countryCode": "COL",
-        "internationalName": "Colombia",
-        "region": "Americas",
-        "subRegion": "South America",
-        "demonym": "Colombian",
-        "originalPrice": "COP 11499 al mes.",
-        "price": 11499,
-        "catalogSize": 31106171,
-        "convertedPrice": 6.0312181769190145,
-        "gdp": 11891.5717509118,
-        "_id": "536b9587ef2dc5284e2156f6",
-        "__v": 0
-    },
-    {
-        "link": "/hk-en/",
-        "title": "Hong Kong (English)",
-        "originalRel": "hk-en",
-        "rel": "hk",
-        "currency": "HKD",
-        "originalCurrency": "HKD",
-        "countryCode": "HKG",
-        "internationalName": "Hong Kong",
-        "region": "Asia",
-        "subRegion": "Eastern Asia",
-        "demonym": "Chinese",
-        "originalPrice": "48 HKD a month.",
-        "price": 48,
-        "catalogSize": 31226948,
-        "convertedPrice": 6.1921373787598855,
-        "gdp": 51170.3955508757,
-        "_id": "536b9587ef2dc5284e215704",
-        "__v": 0
-    },
-    {
-        "link": "/hk-zh/",
-        "title": "香港（中文）",
-        "originalRel": "hk-zh",
-        "rel": "hk",
-        "currency": "HKD",
-        "originalCurrency": "HKD",
-        "countryCode": "HKG",
-        "internationalName": "Hong Kong",
-        "region": "Asia",
-        "subRegion": "Eastern Asia",
-        "demonym": "Chinese",
-        "originalPrice": "每月港幣 48 HKD 。",
-        "price": 48,
-        "catalogSize": 31226948,
-        "convertedPrice": 6.1921373787598855,
-        "_id": "536b9587ef2dc5284e21572a",
-        "__v": 0
-    },
-    {
-        "link": "/pl/",
-        "title": "Polska",
-        "originalRel": "pl",
-        "rel": "pl",
-        "currency": "PLN",
-        "originalCurrency": "PLN",
-        "countryCode": "POL",
-        "internationalName": "Poland",
+        "rel": "BE",
+        "title": "Belgium",
         "region": "Europe",
-        "subRegion": "Eastern Europe",
-        "demonym": "Polish",
-        "originalPrice": "19,99 PLN miesięcznie.",
-        "price": 19.99,
-        "catalogSize": 31874995,
-        "convertedPrice": 6.634019811127896,
-        "gdp": 22782.5855402629,
-        "_id": "536b9587ef2dc5284e21571b",
-        "__v": 0
+        "currency": "EUR"
     },
     {
-        "link": "/bg/",
+        "rel": "BF",
+        "title": "Burkina Faso",
+        "region": "Africa",
+        "currency": "XOF"
+    },
+    {
+        "rel": "BG",
         "title": "Bulgaria",
-        "originalRel": "bg",
-        "rel": "bg",
-        "currency": "EUR",
-        "originalCurrency": "BGN",
-        "countryCode": "BGR",
-        "internationalName": "Bulgaria",
         "region": "Europe",
-        "subRegion": "Eastern Europe",
-        "demonym": "Bulgarian",
-        "originalPrice": "4.99 EUR a month.",
-        "price": 4.99,
-        "catalogSize": 31744408,
-        "convertedPrice": 6.927092009550781,
-        "gdp": 16040.8183271134,
-        "_id": "536b9587ef2dc5284e2156f4",
-        "__v": 0
+        "currency": "BGN"
     },
     {
-        "link": "/hu/",
-        "title": "Hungary",
-        "originalRel": "hu",
-        "rel": "hu",
-        "currency": "EUR",
-        "originalCurrency": "HUF",
-        "countryCode": "HUN",
-        "internationalName": "Hungary",
+        "rel": "BA",
+        "title": "Bosnia and Herzegovina",
         "region": "Europe",
-        "subRegion": "Eastern Europe",
-        "demonym": "Hungarian",
-        "originalPrice": "4.99 EUR a month.",
-        "price": 4.99,
-        "catalogSize": 31952164,
-        "convertedPrice": 6.927092009550781,
-        "gdp": 22635.1808850458,
-        "_id": "536b9587ef2dc5284e215705",
-        "__v": 0
+        "currency": "BAM"
     },
     {
-        "link": "/mx/",
-        "title": "México",
-        "originalRel": "mx",
-        "rel": "mx",
-        "currency": "MXN",
-        "originalCurrency": "MXN",
-        "countryCode": "MEX",
-        "internationalName": "Mexico",
+        "rel": "BB",
+        "title": "Barbados",
         "region": "Americas",
-        "subRegion": "Central America",
-        "demonym": "Mexican",
-        "originalPrice": "99 MXN al mes.",
-        "price": 99,
-        "catalogSize": 29815803,
-        "convertedPrice": 7.640339138447576,
-        "gdp": 16426.0284077542,
-        "_id": "536b9587ef2dc5284e215712",
-        "__v": 0
+        "currency": "BBD"
     },
     {
-        "link": "/sg-en/",
-        "title": "Singapore (English)",
-        "originalRel": "sg-en",
-        "rel": "sg",
-        "currency": "SGD",
-        "originalCurrency": "SGD",
-        "countryCode": "SGP",
-        "internationalName": "Singapore",
-        "region": "Asia",
-        "subRegion": "South-Eastern Asia",
-        "demonym": "Singaporean",
-        "originalPrice": "9.9 SGD a month.",
-        "price": 9.9,
-        "catalogSize": 31029172,
-        "convertedPrice": 7.93669245156413,
-        "gdp": 72724.473088677,
-        "_id": "536b9587ef2dc5284e21571f",
-        "__v": 0
+        "rel": "WF",
+        "title": "Wallis and Futuna",
+        "region": "OceAntarcticaia",
+        "currency": "XPF"
     },
     {
-        "link": "/cz/",
-        "title": "Czech Republic",
-        "originalRel": "cz",
-        "rel": "cz",
-        "currency": "EUR",
-        "originalCurrency": "CZK",
-        "countryCode": "CZE",
-        "internationalName": "Czech Republic",
-        "region": "Europe",
-        "subRegion": "Eastern Europe",
-        "demonym": "Czech",
-        "originalPrice": "5.99 EUR a month.",
-        "price": 5.99,
-        "catalogSize": 31926412,
-        "convertedPrice": 8.315286801043923,
-        "gdp": 27523.0112396231,
-        "_id": "536b9587ef2dc5284e2156f9",
-        "__v": 0
-    },
-    {
-        "link": "/sk/",
-        "title": "Slovakia",
-        "originalRel": "sk",
-        "rel": "sk",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "SVK",
-        "internationalName": "Slovakia",
-        "region": "Europe",
-        "subRegion": "Eastern Europe",
-        "demonym": "Slovak",
-        "originalPrice": "5.99 EUR a month.",
-        "price": 5.99,
-        "catalogSize": 31890436,
-        "convertedPrice": 8.315286801043923,
-        "gdp": 25841.7321960822,
-        "_id": "536b9587ef2dc5284e215720",
-        "__v": 0
-    },
-    {
-        "link": "/cy/",
-        "title": "Cyprus",
-        "originalRel": "cy",
-        "rel": "cy",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "CYP",
-        "internationalName": "Cyprus",
-        "region": "Asia",
-        "subRegion": "Western Asia",
-        "demonym": "Cypriot",
-        "originalPrice": "6.99 EUR a month.",
-        "price": 6.99,
-        "catalogSize": 31702122,
-        "convertedPrice": 9.703481592537065,
-        "gdp": 30768.3305836713,
-        "_id": "536b9587ef2dc5284e2156f8",
-        "__v": 0
-    },
-    {
-        "link": "/ee/",
-        "title": "Estonia",
-        "originalRel": "ee",
-        "rel": "ee",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "EST",
-        "internationalName": "Estonia",
-        "region": "Europe",
-        "subRegion": "Northern Europe",
-        "demonym": "Estonian",
-        "originalPrice": "6.99 EUR a month.",
-        "price": 6.99,
-        "catalogSize": 31923495,
-        "convertedPrice": 9.703481592537065,
-        "gdp": 24449.6592294778,
-        "_id": "536b9587ef2dc5284e2156ff",
-        "__v": 0
-    },
-    {
-        "link": "/lv/",
-        "title": "Latvia",
-        "originalRel": "lv",
-        "rel": "lv",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "LVA",
-        "internationalName": "Latvia",
-        "region": "Europe",
-        "subRegion": "Northern Europe",
-        "demonym": "Latvian",
-        "originalPrice": "6.99 EUR a month.",
-        "price": 6.99,
-        "catalogSize": 31923268,
-        "convertedPrice": 9.703481592537065,
-        "gdp": 21809.8189600133,
-        "_id": "536b9587ef2dc5284e215709",
-        "__v": 0
-    },
-    {
-        "link": "/lt/",
-        "title": "Lithuania",
-        "originalRel": "lt",
-        "rel": "lt",
-        "currency": "EUR",
-        "originalCurrency": "LTL",
-        "countryCode": "LTU",
-        "internationalName": "Lithuania",
-        "region": "Europe",
-        "subRegion": "Northern Europe",
-        "demonym": "Lithuanian",
-        "originalPrice": "6.99 EUR a month.",
-        "price": 6.99,
-        "catalogSize": 31934726,
-        "convertedPrice": 9.703481592537065,
-        "gdp": 24355.5586107794,
-        "_id": "536b9587ef2dc5284e21570b",
-        "__v": 0
-    },
-    {
-        "link": "/mt/",
-        "title": "Malta",
-        "originalRel": "mt",
-        "rel": "mt",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "MLT",
-        "internationalName": "Malta",
-        "region": "Europe",
-        "subRegion": "Southern Europe",
-        "demonym": "Maltese",
-        "originalPrice": "6.99 EUR a month.",
-        "price": 6.99,
-        "catalogSize": 31721626,
-        "convertedPrice": 9.703481592537065,
-        "gdp": 28955.0532724912,
-        "_id": "536b9587ef2dc5284e215710",
-        "__v": 0
-    },
-    {
-        "link": "/pt/",
-        "title": "Portugal",
-        "originalRel": "pt",
-        "rel": "pt",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "PRT",
-        "internationalName": "Portugal",
-        "region": "Europe",
-        "subRegion": "Southern Europe",
-        "demonym": "Portuguese",
-        "originalPrice": "€6.99 a month.",
-        "price": 6.99,
-        "catalogSize": 32057845,
-        "convertedPrice": 9.703481592537065,
-        "gdp": 25958.3301995893,
-        "_id": "536b9587ef2dc5284e21571c",
-        "__v": 0
-    },
-    {
-        "link": "/gr/",
-        "title": "Ελλάδα",
-        "originalRel": "gr",
-        "rel": "gr",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "GRC",
-        "internationalName": "Greece",
-        "region": "Europe",
-        "subRegion": "Southern Europe",
-        "demonym": "Greek",
-        "originalPrice": "6.99 EUR το μήνα.",
-        "price": 6.99,
-        "catalogSize": 31919172,
-        "convertedPrice": 9.703481592537065,
-        "gdp": 26040.7648525517,
-        "_id": "536b9587ef2dc5284e215728",
-        "__v": 0
-    },
-    {
-        "link": "/us/",
-        "title": "USA",
-        "originalRel": "us",
-        "rel": "us",
-        "currency": "USD",
-        "originalCurrency": "USD",
-        "countryCode": "USA",
-        "internationalName": "United States",
+        "rel": "BL",
+        "title": "Saint Barthelemy",
         "region": "Americas",
-        "subRegion": "Northern America",
-        "demonym": "American",
-        "originalPrice": "$9.99 a month.",
-        "price": 9.99,
-        "catalogSize": 27513876,
-        "convertedPrice": 9.99,
-        "gdp": 51748.561485176,
-        "_id": "536b9587ef2dc5284e215724",
-        "__v": 0
+        "currency": "EUR"
     },
     {
-        "link": "/nz/",
-        "title": "New Zealand",
-        "originalRel": "nz",
-        "rel": "nz",
-        "currency": "NZD",
-        "originalCurrency": "NZD",
-        "countryCode": "NZL",
-        "internationalName": "New Zealand",
-        "region": "Oceania",
-        "subRegion": "Australia and New Zealand",
-        "demonym": "New Zealander",
-        "originalPrice": "$12.99 per month",
-        "price": 12.99,
-        "catalogSize": 31021780,
-        "convertedPrice": 11.229612288774797,
-        "gdp": 32925.917119646,
-        "_id": "536b9587ef2dc5284e215714",
-        "__v": 0
+        "rel": "BM",
+        "title": "Bermuda",
+        "region": "Americas",
+        "currency": "BMD"
     },
     {
-        "link": "/au/",
-        "title": "Australia",
-        "originalRel": "au",
-        "rel": "au",
-        "currency": "AUD",
-        "originalCurrency": "AUD",
-        "countryCode": "AUS",
-        "internationalName": "Australia",
-        "region": "Oceania",
-        "subRegion": "Australia and New Zealand",
-        "demonym": "Australian",
-        "originalPrice": "$11.99 per month",
-        "price": 11.99,
-        "catalogSize": 30695608,
-        "convertedPrice": 11.25280616267109,
-        "gdp": 43818.3011752285,
-        "_id": "536b9587ef2dc5284e2156f0",
-        "__v": 0
+        "rel": "BN",
+        "title": "Brunei",
+        "region": "Asia",
+        "currency": "BND"
     },
     {
-        "link": "/ad/",
-        "title": "Andorra",
-        "originalRel": "ad",
-        "rel": "ad",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "AND",
-        "internationalName": "Andorra",
+        "rel": "BO",
+        "title": "Bolivia",
+        "region": "Americas",
+        "currency": "BOB"
+    },
+    {
+        "rel": "BH",
+        "title": "Bahrain",
+        "region": "Asia",
+        "currency": "BHD"
+    },
+    {
+        "rel": "BI",
+        "title": "Burundi",
+        "region": "Africa",
+        "currency": "BIF"
+    },
+    {
+        "rel": "BJ",
+        "title": "Benin",
+        "region": "Africa",
+        "currency": "XOF"
+    },
+    {
+        "rel": "BT",
+        "title": "Bhutan",
+        "region": "Asia",
+        "currency": "BTN"
+    },
+    {
+        "rel": "JM",
+        "title": "Jamaica",
+        "region": "Americas",
+        "currency": "JMD"
+    },
+    {
+        "rel": "BV",
+        "title": "Bouvet Island",
+        "region": "Antarctica",
+        "currency": "NOK"
+    },
+    {
+        "rel": "BW",
+        "title": "Botswana",
+        "region": "Africa",
+        "currency": "BWP"
+    },
+    {
+        "rel": "WS",
+        "title": "Samoa",
+        "region": "OceAntarcticaia",
+        "currency": "WST"
+    },
+    {
+        "rel": "BQ",
+        "title": "Bonaire, Saint Eustatius and Saba ",
+        "region": "Americas",
+        "currency": "USD"
+    },
+    {
+        "rel": "BR",
+        "title": "Brazil",
+        "region": "Americas",
+        "currency": "BRL"
+    },
+    {
+        "rel": "BS",
+        "title": "Bahamas",
+        "region": "Americas",
+        "currency": "BSD"
+    },
+    {
+        "rel": "JE",
+        "title": "Jersey",
         "region": "Europe",
-        "subRegion": "Southern Europe",
-        "demonym": "Andorran",
-        "originalPrice": "9.99 € al mes",
-        "price": 9.99,
-        "catalogSize": 31433491,
-        "convertedPrice": 13.868065967016491,
-        "gdp": null,
-        "_id": "536b9587ef2dc5284e2156ee",
-        "__v": 0
+        "currency": "GBP"
     },
     {
-        "link": "/be-fr/",
-        "title": "Belgique (français)",
-        "originalRel": "be-fr",
-        "rel": "be",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "BEL",
-        "internationalName": "Belgium",
+        "rel": "BY",
+        "title": "Belarus",
         "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "Belgian",
-        "originalPrice": "€ 9,99 par mois",
-        "price": 9.99,
-        "catalogSize": 32137098,
-        "convertedPrice": 13.868065967016491,
-        "gdp": 40565.5917254494,
-        "_id": "536b9587ef2dc5284e2156f1",
-        "__v": 0
+        "currency": "BYR"
     },
     {
-        "link": "/be-nl/",
-        "title": "België (Nederlands)",
-        "originalRel": "be-nl",
-        "rel": "be",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "BEL",
-        "internationalName": "Belgium",
+        "rel": "BZ",
+        "title": "Belize",
+        "region": "Americas",
+        "currency": "BZD"
+    },
+    {
+        "rel": "RU",
+        "title": "Russia",
         "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "Belgian",
-        "originalPrice": "€ 9,99 per maand",
-        "price": 9.99,
-        "catalogSize": 32137098,
-        "convertedPrice": 13.868065967016491,
-        "_id": "536b9587ef2dc5284e2156f2",
-        "__v": 0
+        "currency": "RUB"
     },
     {
-        "link": "/de/",
-        "title": "Deutschland",
-        "originalRel": "de",
-        "rel": "de",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "DEU",
-        "internationalName": "Germany",
+        "rel": "RW",
+        "title": "Rwanda",
+        "region": "Africa",
+        "currency": "RWF"
+    },
+    {
+        "rel": "RS",
+        "title": "Serbia",
         "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "German",
-        "originalPrice": "9,99 € pro Monat",
-        "price": 9.99,
-        "catalogSize": 32293049,
-        "convertedPrice": 13.868065967016491,
-        "gdp": 42700.107667736,
-        "_id": "536b9587ef2dc5284e2156fb",
-        "__v": 0
+        "currency": "RSD"
     },
     {
-        "link": "/es/",
-        "title": "España",
-        "originalRel": "es",
-        "rel": "es",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "ESP",
-        "internationalName": "Spain",
+        "rel": "TL",
+        "title": "East Timor",
+        "region": "OceAntarcticaia",
+        "currency": "USD"
+    },
+    {
+        "rel": "RE",
+        "title": "Reunion",
+        "region": "Africa",
+        "currency": "EUR"
+    },
+    {
+        "rel": "TM",
+        "title": "Turkmenistan",
+        "region": "Asia",
+        "currency": "TMT"
+    },
+    {
+        "rel": "TJ",
+        "title": "Tajikistan",
+        "region": "Asia",
+        "currency": "TJS"
+    },
+    {
+        "rel": "RO",
+        "title": "Romania",
         "region": "Europe",
-        "subRegion": "Southern Europe",
-        "demonym": "Spanish",
-        "originalPrice": "9,99 € al mes",
-        "price": 9.99,
-        "catalogSize": 32089004,
-        "convertedPrice": 13.868065967016491,
-        "gdp": 32134.3519388933,
-        "_id": "536b9587ef2dc5284e2156fe",
-        "__v": 0
+        "currency": "RON"
     },
     {
-        "link": "/fi/",
-        "title": "Finland",
-        "originalRel": "fi",
-        "rel": "fi",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "FIN",
-        "internationalName": "Finland",
+        "rel": "TK",
+        "title": "Tokelau",
+        "region": "OceAntarcticaia",
+        "currency": "NZD"
+    },
+    {
+        "rel": "GW",
+        "title": "Guinea-Bissau",
+        "region": "Africa",
+        "currency": "XOF"
+    },
+    {
+        "rel": "GU",
+        "title": "Guam",
+        "region": "OceAntarcticaia",
+        "currency": "USD"
+    },
+    {
+        "rel": "GT",
+        "title": "Guatemala",
+        "region": "Americas",
+        "currency": "GTQ"
+    },
+    {
+        "rel": "GS",
+        "title": "South Georgia and the South Sandwich Islands",
+        "region": "Antarctica",
+        "currency": "GBP"
+    },
+    {
+        "rel": "GR",
+        "title": "Greece",
         "region": "Europe",
-        "subRegion": "Northern Europe",
-        "demonym": "Finnish",
-        "originalPrice": "9,99 € per month",
-        "price": 9.99,
-        "catalogSize": 32162181,
-        "convertedPrice": 13.868065967016491,
-        "gdp": 39198.8262738474,
-        "_id": "536b9587ef2dc5284e215700",
-        "__v": 0
+        "currency": "EUR"
     },
     {
-        "link": "/fr/",
-        "title": "France",
-        "originalRel": "fr",
-        "rel": "fr",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "FRA",
-        "internationalName": "France",
+        "rel": "GQ",
+        "title": "Equatorial Guinea",
+        "region": "Africa",
+        "currency": "XAF"
+    },
+    {
+        "rel": "GP",
+        "title": "Guadeloupe",
+        "region": "Americas",
+        "currency": "EUR"
+    },
+    {
+        "rel": "JP",
+        "title": "Japan",
+        "region": "Asia",
+        "currency": "JPY"
+    },
+    {
+        "rel": "GY",
+        "title": "Guyana",
+        "region": "Americas",
+        "currency": "GYD"
+    },
+    {
+        "rel": "GG",
+        "title": "Guernsey",
         "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "French",
-        "originalPrice": "9.99 € par mois",
-        "price": 9.99,
-        "catalogSize": 32039281,
-        "convertedPrice": 13.868065967016491,
-        "gdp": 36784.7892088998,
-        "_id": "536b9587ef2dc5284e215701",
-        "__v": 0
+        "currency": "GBP"
     },
     {
-        "link": "/is/",
-        "title": "Iceland",
-        "originalRel": "is",
-        "rel": "is",
-        "currency": "EUR",
-        "originalCurrency": "ISK",
-        "countryCode": "ISL",
-        "internationalName": "Iceland",
-        "region": "Europe",
-        "subRegion": "Northern Europe",
-        "demonym": "Icelander",
-        "originalPrice": "9.99 EUR a month.",
-        "price": 9.99,
-        "catalogSize": 31929658,
-        "convertedPrice": 13.868065967016491,
-        "gdp": 39096.5389278141,
-        "_id": "536b9587ef2dc5284e215706",
-        "__v": 0
+        "rel": "GF",
+        "title": "French Guiana",
+        "region": "Americas",
+        "currency": "EUR"
     },
     {
-        "link": "/ie/",
-        "title": "Ireland",
-        "originalRel": "ie",
-        "rel": "ie",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "IRL",
-        "internationalName": "Republic of Ireland",
-        "region": "Europe",
-        "subRegion": "Northern Europe",
-        "demonym": "Irish",
-        "originalPrice": "€9.99 per month",
-        "price": 9.99,
-        "catalogSize": 32047783,
-        "convertedPrice": 13.868065967016491,
-        "gdp": 43833.8636012064,
-        "_id": "536b9587ef2dc5284e215707",
-        "__v": 0
+        "rel": "GE",
+        "title": "Georgia",
+        "region": "Asia",
+        "currency": "GEL"
     },
     {
-        "link": "/it/",
-        "title": "Italia",
-        "originalRel": "it",
-        "rel": "it",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "ITA",
-        "internationalName": "Italy",
-        "region": "Europe",
-        "subRegion": "Southern Europe",
-        "demonym": "Italian",
-        "originalPrice": "€9,99 al mese.",
-        "price": 9.99,
-        "catalogSize": 31892653,
-        "convertedPrice": 13.868065967016491,
-        "gdp": 34926.0173575309,
-        "_id": "536b9587ef2dc5284e215708",
-        "__v": 0
+        "rel": "GD",
+        "title": "Grenada",
+        "region": "Americas",
+        "currency": "XCD"
     },
     {
-        "link": "/lu-fr/",
-        "title": "Luxembourg (français)",
-        "originalRel": "lu-fr",
-        "rel": "lu",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "LUX",
-        "internationalName": "Luxembourg",
-        "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "Luxembourger",
-        "originalPrice": "9.99 € par mois",
-        "price": 9.99,
-        "catalogSize": 31947334,
-        "convertedPrice": 13.868065967016491,
-        "gdp": 89510.3412221191,
-        "_id": "536b9587ef2dc5284e21570c",
-        "__v": 0
-    },
-    {
-        "link": "/lu-de/",
-        "title": "Luxemburg (Deutsch)",
-        "originalRel": "lu-de",
-        "rel": "lu",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "LUX",
-        "internationalName": "Luxembourg",
-        "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "Luxembourger",
-        "originalPrice": "9,99 € pro Monat",
-        "price": 9.99,
-        "catalogSize": 31947334,
-        "convertedPrice": 13.868065967016491,
-        "_id": "536b9587ef2dc5284e21570d",
-        "__v": 0
-    },
-    {
-        "link": "/mc/",
-        "title": "Monaco",
-        "originalRel": "mc",
-        "rel": "mc",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "MCO",
-        "internationalName": "Monaco",
-        "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "Monegasque",
-        "originalPrice": "9.99 € par mois",
-        "price": 9.99,
-        "catalogSize": 31526970,
-        "convertedPrice": 13.868065967016491,
-        "gdp": null,
-        "_id": "536b9587ef2dc5284e215711",
-        "__v": 0
-    },
-    {
-        "link": "/nl/",
-        "title": "Nederland",
-        "originalRel": "nl",
-        "rel": "nl",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "NLD",
-        "internationalName": "Netherlands",
-        "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "Dutch",
-        "originalPrice": "€ 9,99 per maand",
-        "price": 9.99,
-        "catalogSize": 32153283,
-        "convertedPrice": 13.868065967016491,
-        "gdp": 43338.9550086792,
-        "_id": "536b9587ef2dc5284e215713",
-        "__v": 0
-    },
-    {
-        "link": "/at/",
-        "title": "Österreich",
-        "originalRel": "at",
-        "rel": "at",
-        "currency": "EUR",
-        "originalCurrency": "EUR",
-        "countryCode": "AUT",
-        "internationalName": "Austria",
-        "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "Austrian",
-        "originalPrice": "€ 9,99 pro Monat",
-        "price": 9.99,
-        "catalogSize": 32285523,
-        "convertedPrice": 13.868065967016491,
-        "gdp": 44122.0257046851,
-        "_id": "536b9587ef2dc5284e215727",
-        "__v": 0
-    },
-    {
-        "link": "/li/",
-        "title": "Liechtenstein",
-        "originalRel": "li",
-        "rel": "li",
-        "currency": "CHF",
-        "originalCurrency": "CHF",
-        "countryCode": "LIE",
-        "internationalName": "Liechtenstein",
-        "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "Liechtensteiner",
-        "originalPrice": "12.95 CHF pro Monat",
-        "price": 12.95,
-        "catalogSize": 31605811,
-        "convertedPrice": 14.766787385628666,
-        "gdp": null,
-        "_id": "536b9587ef2dc5284e21570a",
-        "__v": 0
-    },
-    {
-        "link": "/ch-de/",
-        "title": "Schweiz (Deutsch)",
-        "originalRel": "ch-de",
-        "rel": "ch",
-        "currency": "CHF",
-        "originalCurrency": "CHE",
-        "countryCode": "CHE",
-        "internationalName": "Switzerland",
-        "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "Swiss",
-        "originalPrice": "Fr. 12.95 pro Monat",
-        "price": 12.95,
-        "catalogSize": 32247524,
-        "convertedPrice": 14.766787385628666,
-        "gdp": 53191.2272659133,
-        "_id": "536b9587ef2dc5284e21571e",
-        "__v": 0
-    },
-    {
-        "link": "/ch-fr/",
-        "title": "Suisse (français)",
-        "originalRel": "ch-fr",
-        "rel": "ch",
-        "currency": "CHF",
-        "originalCurrency": "CHE",
-        "countryCode": "CHE",
-        "internationalName": "Switzerland",
-        "region": "Europe",
-        "subRegion": "Western Europe",
-        "demonym": "Swiss",
-        "originalPrice": "Fr. 12.95 par mois",
-        "price": 12.95,
-        "catalogSize": 32247524,
-        "convertedPrice": 14.766787385628666,
-        "_id": "536b9587ef2dc5284e215721",
-        "__v": 0
-    },
-    {
-        "link": "/se/",
-        "title": "Sweden",
-        "originalRel": "se",
-        "rel": "se",
-        "currency": "SEK",
-        "originalCurrency": "SEK",
-        "countryCode": "SWE",
-        "internationalName": "Sweden",
-        "region": "Europe",
-        "subRegion": "Northern Europe",
-        "demonym": "Swedish",
-        "originalPrice": "99,00 kr per month",
-        "price": 99,
-        "catalogSize": 32153742,
-        "convertedPrice": 15.224220473777741,
-        "gdp": 42865.8222546556,
-        "_id": "536b9587ef2dc5284e215722",
-        "__v": 0
-    },
-    {
-        "link": "/no/",
-        "title": "Norway",
-        "originalRel": "no",
-        "rel": "no",
-        "currency": "NOK",
-        "originalCurrency": "NOK",
-        "countryCode": "NOR",
-        "internationalName": "Norway",
-        "region": "Europe",
-        "subRegion": "Northern Europe",
-        "demonym": "Norwegian",
-        "originalPrice": "kr99,00 per month",
-        "price": 99,
-        "catalogSize": 32169679,
-        "convertedPrice": 16.817814652393608,
-        "gdp": 66140.699299095,
-        "_id": "536b9587ef2dc5284e215716",
-        "__v": 0
-    },
-    {
-        "link": "/uk/",
+        "rel": "GB",
         "title": "United Kingdom",
-        "originalRel": "uk",
-        "rel": "gb",
-        "currency": "GBP",
-        "originalCurrency": "GBP",
-        "countryCode": "GBR",
-        "internationalName": "United Kingdom",
         "region": "Europe",
-        "subRegion": "Northern Europe",
-        "demonym": "British",
-        "originalPrice": "£9.99 per month",
-        "price": 9.99,
-        "catalogSize": 31956602,
-        "convertedPrice": 16.94239754428512,
-        "gdp": 35722.3109773884,
-        "_id": "536b9587ef2dc5284e215725",
-        "__v": 0
+        "currency": "GBP"
     },
     {
-        "link": "/dk/",
-        "title": "Denmark",
-        "originalRel": "dk",
-        "rel": "dk",
-        "currency": "DKK",
-        "originalCurrency": "DKK",
-        "countryCode": "DNK",
-        "internationalName": "Denmark",
+        "rel": "GA",
+        "title": "Gabon",
+        "region": "Africa",
+        "currency": "XAF"
+    },
+    {
+        "rel": "SV",
+        "title": "El Salvador",
+        "region": "Americas",
+        "currency": "USD"
+    },
+    {
+        "rel": "GN",
+        "title": "Guinea",
+        "region": "Africa",
+        "currency": "GNF"
+    },
+    {
+        "rel": "GM",
+        "title": "Gambia",
+        "region": "Africa",
+        "currency": "GMD"
+    },
+    {
+        "rel": "GL",
+        "title": "Greenland",
+        "region": "Americas",
+        "currency": "DKK"
+    },
+    {
+        "rel": "GI",
+        "title": "Gibraltar",
         "region": "Europe",
-        "subRegion": "Northern Europe",
-        "demonym": "Danish",
-        "originalPrice": "kr 99,00 per month",
-        "price": 99,
-        "catalogSize": 32149350,
-        "convertedPrice": 18.422631924188078,
-        "gdp": 42775.2048527824,
-        "_id": "536b9587ef2dc5284e2156fa",
-        "__v": 0
+        "currency": "GIP"
+    },
+    {
+        "rel": "GH",
+        "title": "Ghana",
+        "region": "Africa",
+        "currency": "GHS"
+    },
+    {
+        "rel": "OM",
+        "title": "Oman",
+        "region": "Asia",
+        "currency": "OMR"
+    },
+    {
+        "rel": "TN",
+        "title": "Tunisia",
+        "region": "Africa",
+        "currency": "TND"
+    },
+    {
+        "rel": "JO",
+        "title": "Jordan",
+        "region": "Asia",
+        "currency": "JOD"
+    },
+    {
+        "rel": "HR",
+        "title": "Croatia",
+        "region": "Europe",
+        "currency": "HRK"
+    },
+    {
+        "rel": "HT",
+        "title": "Haiti",
+        "region": "Americas",
+        "currency": "HTG"
+    },
+    {
+        "rel": "HU",
+        "title": "Hungary",
+        "region": "Europe",
+        "currency": "HUF"
+    },
+    {
+        "rel": "HK",
+        "title": "Hong Kong",
+        "region": "Asia",
+        "currency": "HKD"
+    },
+    {
+        "rel": "HN",
+        "title": "Honduras",
+        "region": "Americas",
+        "currency": "HNL"
+    },
+    {
+        "rel": "HM",
+        "title": "Heard Island and McDonald Islands",
+        "region": "Antarctica",
+        "currency": "AUD"
+    },
+    {
+        "rel": "VE",
+        "title": "Venezuela",
+        "region": "Americas",
+        "currency": "VEF"
+    },
+    {
+        "rel": "PR",
+        "title": "Puerto Rico",
+        "region": "Americas",
+        "currency": "USD"
+    },
+    {
+        "rel": "PS",
+        "title": "Palestinian Territory",
+        "region": "Asia",
+        "currency": "ILS"
+    },
+    {
+        "rel": "PW",
+        "title": "Palau",
+        "region": "OceAntarcticaia",
+        "currency": "USD"
+    },
+    {
+        "rel": "PT",
+        "title": "Portugal",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "SJ",
+        "title": "Svalbard and Jan Mayen",
+        "region": "Europe",
+        "currency": "NOK"
+    },
+    {
+        "rel": "PY",
+        "title": "Paraguay",
+        "region": "Americas",
+        "currency": "PYG"
+    },
+    {
+        "rel": "IQ",
+        "title": "Iraq",
+        "region": "Asia",
+        "currency": "IQD"
+    },
+    {
+        "rel": "PA",
+        "title": "Panama",
+        "region": "Americas",
+        "currency": "PAB"
+    },
+    {
+        "rel": "PF",
+        "title": "French Polynesia",
+        "region": "OceAntarcticaia",
+        "currency": "XPF"
+    },
+    {
+        "rel": "PG",
+        "title": "Papua New Guinea",
+        "region": "OceAntarcticaia",
+        "currency": "PGK"
+    },
+    {
+        "rel": "PE",
+        "title": "Peru",
+        "region": "Americas",
+        "currency": "PEN"
+    },
+    {
+        "rel": "PK",
+        "title": "Pakistan",
+        "region": "Asia",
+        "currency": "PKR"
+    },
+    {
+        "rel": "PH",
+        "title": "Philippines",
+        "region": "Asia",
+        "currency": "PHP"
+    },
+    {
+        "rel": "PN",
+        "title": "Pitcairn",
+        "region": "OceAntarcticaia",
+        "currency": "NZD"
+    },
+    {
+        "rel": "PL",
+        "title": "Poland",
+        "region": "Europe",
+        "currency": "PLN"
+    },
+    {
+        "rel": "PM",
+        "title": "Saint Pierre and Miquelon",
+        "region": "Americas",
+        "currency": "EUR"
+    },
+    {
+        "rel": "ZM",
+        "title": "Zambia",
+        "region": "Africa",
+        "currency": "ZMK"
+    },
+    {
+        "rel": "EH",
+        "title": "Western Sahara",
+        "region": "Africa",
+        "currency": "MAD"
+    },
+    {
+        "rel": "EE",
+        "title": "Estonia",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "EG",
+        "title": "Egypt",
+        "region": "Africa",
+        "currency": "EGP"
+    },
+    {
+        "rel": "ZA",
+        "title": "South Africa",
+        "region": "Africa",
+        "currency": "ZAR"
+    },
+    {
+        "rel": "EC",
+        "title": "Ecuador",
+        "region": "Americas",
+        "currency": "USD"
+    },
+    {
+        "rel": "IT",
+        "title": "Italy",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "VN",
+        "title": "Vietnam",
+        "region": "Asia",
+        "currency": "VND"
+    },
+    {
+        "rel": "SB",
+        "title": "Solomon Islands",
+        "region": "OceAntarcticaia",
+        "currency": "SBD"
+    },
+    {
+        "rel": "ET",
+        "title": "Ethiopia",
+        "region": "Africa",
+        "currency": "ETB"
+    },
+    {
+        "rel": "SO",
+        "title": "Somalia",
+        "region": "Africa",
+        "currency": "SOS"
+    },
+    {
+        "rel": "ZW",
+        "title": "Zimbabwe",
+        "region": "Africa",
+        "currency": "ZWL"
+    },
+    {
+        "rel": "SA",
+        "title": "Saudi Arabia",
+        "region": "Asia",
+        "currency": "SAR"
+    },
+    {
+        "rel": "ES",
+        "title": "Spain",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "ER",
+        "title": "Eritrea",
+        "region": "Africa",
+        "currency": "ERN"
+    },
+    {
+        "rel": "ME",
+        "title": "Montenegro",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "MD",
+        "title": "Moldova",
+        "region": "Europe",
+        "currency": "MDL"
+    },
+    {
+        "rel": "MG",
+        "title": "Madagascar",
+        "region": "Africa",
+        "currency": "MGA"
+    },
+    {
+        "rel": "MF",
+        "title": "Saint Martin",
+        "region": "Americas",
+        "currency": "EUR"
+    },
+    {
+        "rel": "MA",
+        "title": "Morocco",
+        "region": "Africa",
+        "currency": "MAD"
+    },
+    {
+        "rel": "MC",
+        "title": "Monaco",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "UZ",
+        "title": "Uzbekistan",
+        "region": "Asia",
+        "currency": "UZS"
+    },
+    {
+        "rel": "MM",
+        "title": "Myanmar",
+        "region": "Asia",
+        "currency": "MMK"
+    },
+    {
+        "rel": "ML",
+        "title": "Mali",
+        "region": "Africa",
+        "currency": "XOF"
+    },
+    {
+        "rel": "MO",
+        "title": "Macao",
+        "region": "Asia",
+        "currency": "MOP"
+    },
+    {
+        "rel": "MN",
+        "title": "Mongolia",
+        "region": "Asia",
+        "currency": "MNT"
+    },
+    {
+        "rel": "MH",
+        "title": "Marshall Islands",
+        "region": "OceAntarcticaia",
+        "currency": "USD"
+    },
+    {
+        "rel": "MK",
+        "title": "Macedonia",
+        "region": "Europe",
+        "currency": "MKD"
+    },
+    {
+        "rel": "MU",
+        "title": "Mauritius",
+        "region": "Africa",
+        "currency": "MUR"
+    },
+    {
+        "rel": "MT",
+        "title": "Malta",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "MW",
+        "title": "Malawi",
+        "region": "Africa",
+        "currency": "MWK"
+    },
+    {
+        "rel": "MV",
+        "title": "Maldives",
+        "region": "Asia",
+        "currency": "MVR"
+    },
+    {
+        "rel": "MQ",
+        "title": "Martinique",
+        "region": "Americas",
+        "currency": "EUR"
+    },
+    {
+        "rel": "MP",
+        "title": "Northern Mariana Islands",
+        "region": "OceAntarcticaia",
+        "currency": "USD"
+    },
+    {
+        "rel": "MS",
+        "title": "Montserrat",
+        "region": "Americas",
+        "currency": "XCD"
+    },
+    {
+        "rel": "MR",
+        "title": "Mauritania",
+        "region": "Africa",
+        "currency": "MRO"
+    },
+    {
+        "rel": "IM",
+        "title": "Isle of Man",
+        "region": "Europe",
+        "currency": "GBP"
+    },
+    {
+        "rel": "UG",
+        "title": "Uganda",
+        "region": "Africa",
+        "currency": "UGX"
+    },
+    {
+        "rel": "TZ",
+        "title": "Tanzania",
+        "region": "Africa",
+        "currency": "TZS"
+    },
+    {
+        "rel": "MY",
+        "title": "Malaysia",
+        "region": "Asia",
+        "currency": "MYR"
+    },
+    {
+        "rel": "MX",
+        "title": "Mexico",
+        "region": "Americas",
+        "currency": "MXN"
+    },
+    {
+        "rel": "IL",
+        "title": "Israel",
+        "region": "Asia",
+        "currency": "ILS"
+    },
+    {
+        "rel": "FR",
+        "title": "France",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "IO",
+        "title": "British Indian Ocean Territory",
+        "region": "Asia",
+        "currency": "USD"
+    },
+    {
+        "rel": "SH",
+        "title": "Saint Helena",
+        "region": "Africa",
+        "currency": "SHP"
+    },
+    {
+        "rel": "FI",
+        "title": "Finland",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "FJ",
+        "title": "Fiji",
+        "region": "OceAntarcticaia",
+        "currency": "FJD"
+    },
+    {
+        "rel": "FK",
+        "title": "Falkland Islands",
+        "region": "Americas",
+        "currency": "FKP"
+    },
+    {
+        "rel": "FM",
+        "title": "Micronesia",
+        "region": "OceAntarcticaia",
+        "currency": "USD"
+    },
+    {
+        "rel": "FO",
+        "title": "Faroe Islands",
+        "region": "Europe",
+        "currency": "DKK"
+    },
+    {
+        "rel": "NI",
+        "title": "Nicaragua",
+        "region": "Americas",
+        "currency": "NIO"
+    },
+    {
+        "rel": "NL",
+        "title": "Netherlands",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "NO",
+        "title": "Norway",
+        "region": "Europe",
+        "currency": "NOK"
+    },
+    {
+        "rel": "NA",
+        "title": "Namibia",
+        "region": "Africa",
+        "currency": "NAD"
+    },
+    {
+        "rel": "VU",
+        "title": "Vanuatu",
+        "region": "OceAntarcticaia",
+        "currency": "VUV"
+    },
+    {
+        "rel": "NC",
+        "title": "New Caledonia",
+        "region": "OceAntarcticaia",
+        "currency": "XPF"
+    },
+    {
+        "rel": "NE",
+        "title": "Niger",
+        "region": "Africa",
+        "currency": "XOF"
+    },
+    {
+        "rel": "NF",
+        "title": "Norfolk Island",
+        "region": "OceAntarcticaia",
+        "currency": "AUD"
+    },
+    {
+        "rel": "NG",
+        "title": "Nigeria",
+        "region": "Africa",
+        "currency": "NGN"
+    },
+    {
+        "rel": "NZ",
+        "title": "New Zealand",
+        "region": "OceAntarcticaia",
+        "currency": "NZD"
+    },
+    {
+        "rel": "NP",
+        "title": "Nepal",
+        "region": "Asia",
+        "currency": "NPR"
+    },
+    {
+        "rel": "NR",
+        "title": "Nauru",
+        "region": "OceAntarcticaia",
+        "currency": "AUD"
+    },
+    {
+        "rel": "NU",
+        "title": "Niue",
+        "region": "OceAntarcticaia",
+        "currency": "NZD"
+    },
+    {
+        "rel": "CK",
+        "title": "Cook Islands",
+        "region": "OceAntarcticaia",
+        "currency": "NZD"
+    },
+    {
+        "rel": "XK",
+        "title": "Kosovo",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "CI",
+        "title": "Ivory Coast",
+        "region": "Africa",
+        "currency": "XOF"
+    },
+    {
+        "rel": "CH",
+        "title": "Switzerland",
+        "region": "Europe",
+        "currency": "CHF"
+    },
+    {
+        "rel": "CO",
+        "title": "Colombia",
+        "region": "Americas",
+        "currency": "COP"
+    },
+    {
+        "rel": "CN",
+        "title": "China",
+        "region": "Asia",
+        "currency": "CNY"
+    },
+    {
+        "rel": "CM",
+        "title": "Cameroon",
+        "region": "Africa",
+        "currency": "XAF"
+    },
+    {
+        "rel": "CL",
+        "title": "Chile",
+        "region": "Americas",
+        "currency": "CLP"
+    },
+    {
+        "rel": "CC",
+        "title": "Cocos Islands",
+        "region": "Asia",
+        "currency": "AUD"
+    },
+    {
+        "rel": "CA",
+        "title": "Canada",
+        "region": "Americas",
+        "currency": "CAD"
+    },
+    {
+        "rel": "CG",
+        "title": "Republic of the Congo",
+        "region": "Africa",
+        "currency": "XAF"
+    },
+    {
+        "rel": "CF",
+        "title": "Central African Republic",
+        "region": "Africa",
+        "currency": "XAF"
+    },
+    {
+        "rel": "CD",
+        "title": "Democratic Republic of the Congo",
+        "region": "Africa",
+        "currency": "CDF"
+    },
+    {
+        "rel": "CZ",
+        "title": "Czech Republic",
+        "region": "Europe",
+        "currency": "CZK"
+    },
+    {
+        "rel": "CY",
+        "title": "Cyprus",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "CX",
+        "title": "Christmas Island",
+        "region": "Asia",
+        "currency": "AUD"
+    },
+    {
+        "rel": "CR",
+        "title": "Costa Rica",
+        "region": "Americas",
+        "currency": "CRC"
+    },
+    {
+        "rel": "CW",
+        "title": "Curacao",
+        "region": "Americas",
+        "currency": "ANG"
+    },
+    {
+        "rel": "CV",
+        "title": "Cape Verde",
+        "region": "Africa",
+        "currency": "CVE"
+    },
+    {
+        "rel": "CU",
+        "title": "Cuba",
+        "region": "Americas",
+        "currency": "CUP"
+    },
+    {
+        "rel": "SZ",
+        "title": "Swaziland",
+        "region": "Africa",
+        "currency": "SZL"
+    },
+    {
+        "rel": "SY",
+        "title": "Syria",
+        "region": "Asia",
+        "currency": "SYP"
+    },
+    {
+        "rel": "SX",
+        "title": "Sint Maarten",
+        "region": "Americas",
+        "currency": "ANG"
+    },
+    {
+        "rel": "KG",
+        "title": "Kyrgyzstan",
+        "region": "Asia",
+        "currency": "KGS"
+    },
+    {
+        "rel": "KE",
+        "title": "Kenya",
+        "region": "Africa",
+        "currency": "KES"
+    },
+    {
+        "rel": "SS",
+        "title": "South Sudan",
+        "region": "Africa",
+        "currency": "SSP"
+    },
+    {
+        "rel": "SR",
+        "title": "Suriname",
+        "region": "Americas",
+        "currency": "SRD"
+    },
+    {
+        "rel": "KI",
+        "title": "Kiribati",
+        "region": "OceAntarcticaia",
+        "currency": "AUD"
+    },
+    {
+        "rel": "KH",
+        "title": "Cambodia",
+        "region": "Asia",
+        "currency": "KHR"
+    },
+    {
+        "rel": "KN",
+        "title": "Saint Kitts and Nevis",
+        "region": "Americas",
+        "currency": "XCD"
+    },
+    {
+        "rel": "KM",
+        "title": "Comoros",
+        "region": "Africa",
+        "currency": "KMF"
+    },
+    {
+        "rel": "ST",
+        "title": "Sao Tome and Principe",
+        "region": "Africa",
+        "currency": "STD"
+    },
+    {
+        "rel": "SK",
+        "title": "Slovakia",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "KR",
+        "title": "South Korea",
+        "region": "Asia",
+        "currency": "KRW"
+    },
+    {
+        "rel": "SI",
+        "title": "Slovenia",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "KP",
+        "title": "North Korea",
+        "region": "Asia",
+        "currency": "KPW"
+    },
+    {
+        "rel": "KW",
+        "title": "Kuwait",
+        "region": "Asia",
+        "currency": "KWD"
+    },
+    {
+        "rel": "SN",
+        "title": "Senegal",
+        "region": "Africa",
+        "currency": "XOF"
+    },
+    {
+        "rel": "SM",
+        "title": "San Marino",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "SL",
+        "title": "Sierra Leone",
+        "region": "Africa",
+        "currency": "SLL"
+    },
+    {
+        "rel": "SC",
+        "title": "Seychelles",
+        "region": "Africa",
+        "currency": "SCR"
+    },
+    {
+        "rel": "KZ",
+        "title": "Kazakhstan",
+        "region": "Asia",
+        "currency": "KZT"
+    },
+    {
+        "rel": "KY",
+        "title": "Cayman Islands",
+        "region": "Americas",
+        "currency": "KYD"
+    },
+    {
+        "rel": "SG",
+        "title": "Singapore",
+        "region": "Asia",
+        "currency": "SGD"
+    },
+    {
+        "rel": "SE",
+        "title": "Sweden",
+        "region": "Europe",
+        "currency": "SEK"
+    },
+    {
+        "rel": "SD",
+        "title": "Sudan",
+        "region": "Africa",
+        "currency": "SDG"
+    },
+    {
+        "rel": "DO",
+        "title": "Dominican Republic",
+        "region": "Americas",
+        "currency": "DOP"
+    },
+    {
+        "rel": "DM",
+        "title": "Dominica",
+        "region": "Americas",
+        "currency": "XCD"
+    },
+    {
+        "rel": "DJ",
+        "title": "Djibouti",
+        "region": "Africa",
+        "currency": "DJF"
+    },
+    {
+        "rel": "DK",
+        "title": "Denmark",
+        "region": "Europe",
+        "currency": "DKK"
+    },
+    {
+        "rel": "VG",
+        "title": "British Virgin Islands",
+        "region": "Americas",
+        "currency": "USD"
+    },
+    {
+        "rel": "DE",
+        "title": "Germany",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "YE",
+        "title": "Yemen",
+        "region": "Asia",
+        "currency": "YER"
+    },
+    {
+        "rel": "DZ",
+        "title": "Algeria",
+        "region": "Africa",
+        "currency": "DZD"
+    },
+    {
+        "rel": "US",
+        "title": "United States",
+        "region": "Americas",
+        "currency": "USD"
+    },
+    {
+        "rel": "UY",
+        "title": "Uruguay",
+        "region": "Americas",
+        "currency": "UYU"
+    },
+    {
+        "rel": "YT",
+        "title": "Mayotte",
+        "region": "Africa",
+        "currency": "EUR"
+    },
+    {
+        "rel": "UM",
+        "title": "United States Minor Outlying Islands",
+        "region": "OceAntarcticaia",
+        "currency": "USD"
+    },
+    {
+        "rel": "LB",
+        "title": "Lebanon",
+        "region": "Asia",
+        "currency": "LBP"
+    },
+    {
+        "rel": "LC",
+        "title": "Saint Lucia",
+        "region": "Americas",
+        "currency": "XCD"
+    },
+    {
+        "rel": "LA",
+        "title": "Laos",
+        "region": "Asia",
+        "currency": "LAK"
+    },
+    {
+        "rel": "TV",
+        "title": "Tuvalu",
+        "region": "OceAntarcticaia",
+        "currency": "AUD"
+    },
+    {
+        "rel": "TW",
+        "title": "Taiwan",
+        "region": "Asia",
+        "currency": "TWD"
+    },
+    {
+        "rel": "TT",
+        "title": "Trinidad and Tobago",
+        "region": "Americas",
+        "currency": "TTD"
+    },
+    {
+        "rel": "TR",
+        "title": "Turkey",
+        "region": "Asia",
+        "currency": "TRY"
+    },
+    {
+        "rel": "LK",
+        "title": "Sri Lanka",
+        "region": "Asia",
+        "currency": "LKR"
+    },
+    {
+        "rel": "LI",
+        "title": "Liechtenstein",
+        "region": "Europe",
+        "currency": "CHF"
+    },
+    {
+        "rel": "LV",
+        "title": "Latvia",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "TO",
+        "title": "Tonga",
+        "region": "OceAntarcticaia",
+        "currency": "TOP"
+    },
+    {
+        "rel": "LT",
+        "title": "Lithuania",
+        "region": "Europe",
+        "currency": "LTL"
+    },
+    {
+        "rel": "LU",
+        "title": "Luxembourg",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "LR",
+        "title": "Liberia",
+        "region": "Africa",
+        "currency": "LRD"
+    },
+    {
+        "rel": "LS",
+        "title": "Lesotho",
+        "region": "Africa",
+        "currency": "LSL"
+    },
+    {
+        "rel": "TH",
+        "title": "Thailand",
+        "region": "Asia",
+        "currency": "THB"
+    },
+    {
+        "rel": "TF",
+        "title": "French Southern Territories",
+        "region": "Antarctica",
+        "currency": "EUR"
+    },
+    {
+        "rel": "TG",
+        "title": "Togo",
+        "region": "Africa",
+        "currency": "XOF"
+    },
+    {
+        "rel": "TD",
+        "title": "Chad",
+        "region": "Africa",
+        "currency": "XAF"
+    },
+    {
+        "rel": "TC",
+        "title": "Turks and Caicos Islands",
+        "region": "Americas",
+        "currency": "USD"
+    },
+    {
+        "rel": "LY",
+        "title": "Libya",
+        "region": "Africa",
+        "currency": "LYD"
+    },
+    {
+        "rel": "VA",
+        "title": "Vatican",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "VC",
+        "title": "Saint Vincent and the Grenadines",
+        "region": "Americas",
+        "currency": "XCD"
+    },
+    {
+        "rel": "AE",
+        "title": "United Arab Emirates",
+        "region": "Asia",
+        "currency": "AED"
+    },
+    {
+        "rel": "AD",
+        "title": "Andorra",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "AG",
+        "title": "Antigua and Barbuda",
+        "region": "Americas",
+        "currency": "XCD"
+    },
+    {
+        "rel": "AF",
+        "title": "Afghanistan",
+        "region": "Asia",
+        "currency": "AFN"
+    },
+    {
+        "rel": "AI",
+        "title": "Anguilla",
+        "region": "Americas",
+        "currency": "XCD"
+    },
+    {
+        "rel": "VI",
+        "title": "U.S. Virgin Islands",
+        "region": "Americas",
+        "currency": "USD"
+    },
+    {
+        "rel": "IS",
+        "title": "Iceland",
+        "region": "Europe",
+        "currency": "ISK"
+    },
+    {
+        "rel": "IR",
+        "title": "Iran",
+        "region": "Asia",
+        "currency": "IRR"
+    },
+    {
+        "rel": "AM",
+        "title": "Armenia",
+        "region": "Asia",
+        "currency": "AMD"
+    },
+    {
+        "rel": "AL",
+        "title": "Albania",
+        "region": "Europe",
+        "currency": "ALL"
+    },
+    {
+        "rel": "AO",
+        "title": "Angola",
+        "region": "Africa",
+        "currency": "AOA"
+    },
+    {
+        "rel": "AQ",
+        "title": "Antarctica",
+        "region": "Antarctica",
+        "currency": ""
+    },
+    {
+        "rel": "AS",
+        "title": "American Samoa",
+        "region": "OceAntarcticaia",
+        "currency": "USD"
+    },
+    {
+        "rel": "AR",
+        "title": "Argentina",
+        "region": "Americas",
+        "currency": "ARS"
+    },
+    {
+        "rel": "AU",
+        "title": "Australia",
+        "region": "OceAntarcticaia",
+        "currency": "AUD"
+    },
+    {
+        "rel": "AT",
+        "title": "Austria",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "AW",
+        "title": "Aruba",
+        "region": "Americas",
+        "currency": "AWG"
+    },
+    {
+        "rel": "IN",
+        "title": "India",
+        "region": "Asia",
+        "currency": "INR"
+    },
+    {
+        "rel": "AX",
+        "title": "Aland Islands",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "AZ",
+        "title": "Azerbaijan",
+        "region": "Asia",
+        "currency": "AZN"
+    },
+    {
+        "rel": "IE",
+        "title": "Ireland",
+        "region": "Europe",
+        "currency": "EUR"
+    },
+    {
+        "rel": "ID",
+        "title": "Indonesia",
+        "region": "Asia",
+        "currency": "IDR"
+    },
+    {
+        "rel": "UA",
+        "title": "Ukraine",
+        "region": "Europe",
+        "currency": "UAH"
+    },
+    {
+        "rel": "QA",
+        "title": "Qatar",
+        "region": "Asia",
+        "currency": "QAR"
+    },
+    {
+        "rel": "MZ",
+        "title": "Mozambique",
+        "region": "Africa",
+        "currency": "MZN"
     }
 ]
