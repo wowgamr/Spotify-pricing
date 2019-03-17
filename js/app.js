@@ -44,7 +44,6 @@ function fetchJSONFile(path, callback) {
   httpRequest.send();
 }
 
-// fetchJSONFile('/api/', formatData);
 fetchJSONFile('data/countries.json', formatData);
 
 function formatData(data){
@@ -100,7 +99,9 @@ function drawMap(){
         if(!data)
           return;
 
-        return '<div class="hoverinfo"><strong>{0}:</strong> ${1}<br>Local price: {2} {3}</div>'.format(data.internationalName, data.convertedPrice, data.currency, data.price);
+
+          // todo: Family plan
+        return '<div class="hoverinfo"><strong>{0}:</strong> ${1}<br>Local price: {2} {3}<br>Premium plan:</div>'.format(data.internationalName, data.convertedPrice, data.currency, data.price);
       },
       popupOnHover: true,
       highlightOnHover: true,
@@ -187,10 +188,6 @@ function drawBarChart(){
 
   x.domain(d3.extent(countries, function(d) { return d.priceDifference; })).nice();
   y.domain(countries.map(function(d) { return d.internationalName; }));
-
-  svg.append("title")
-    .attr("id", "bar-chart-title")
-    .text("Bar chart with negative values of the converted price index");
 
   svg.append("g")
     .attr("class", "x axis")
