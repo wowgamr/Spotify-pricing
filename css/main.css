@@ -100,6 +100,7 @@ text.price {
     text-anchor: end;
 }
 
+
 /* Map styling */
 .datamap path {
     stroke: #FFFFFF;
@@ -166,20 +167,6 @@ text.price {
     border: 1px solid rgb(19, 19, 21);
 }
 
-/* Scatter-plot */
-line.trendline {
-    stroke: rgb(145, 43, 13);
-    stroke-width: 2;
-}
-.scatter-hover {
-    position: absolute;
-    z-index: 1000;
-}
-@media(max-width:767px) {
-    #scatter-plot{
-        display: none;
-    }
-}
 
 /* Continent chooser/filtering */
 h2, .continent-chooser {
@@ -216,6 +203,7 @@ svg.filter.europe .europe, svg.filter.americas .americas, svg.filter.asia .asia,
     opacity: 1;
 }
 
+
 /* Default styling for chart containers */
 .chart {
     position: relative;
@@ -231,34 +219,6 @@ svg.filter.europe .europe, svg.filter.americas .americas, svg.filter.asia .asia,
     }
 }
 
-/* GitHub fork me ribbon */
-@media(max-width:767px){
-    .github-fork {
-        display: none;
-    }
-}
-
-.blog-link {
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    font-weight: 500;
-}
-@media(max-width:767px){
-    .blog-link {
-        top: 0;
-    }
-}
-
-.blog-link a {
-    color: rgb(136, 137, 140);
-}
-
-.blog-link:before {
-    content: "← ";
-    line-height: 0;
-    display: inline-block;
-    height: 0;
-    margin-right: 8px;
-    font-size: 18px;
+.footer p {
+    font-size: 15px;
 }
