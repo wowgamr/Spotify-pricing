@@ -13,3 +13,4 @@ Thanks to the following libraries:
 - [tinycolor.js](http://bgrins.github.io/TinyColor/)
 - http://country.io/data/
 - https://github.com/tj/php-selector
+- https://openexchangerates.org
