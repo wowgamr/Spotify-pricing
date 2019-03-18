@@ -98,7 +98,7 @@ function drawMap(){
         if(!data)
           return;
 
-        return '<div class="hoverinfo"><strong>{0}:</strong> ${1}<br>Local price: {2} {3}<br>Family plan: {2} {4}</div>'.format(data.internationalName, data.convertedPrice, data.currency, data.price, data.f_price);
+        return '<div class="hoverinfo"><strong>{0}:</strong> ${1}<br>Local price: {2} {3}<br>Family plan: {2} {4}</div>'.format(data.title, data.convertedPrice, data.currency, data.price, data.f_price);
       },
       popupOnHover: true,
       highlightOnHover: true,
@@ -126,7 +126,7 @@ function updateMapColors(map){
   _.each(countries, function(country){
     update[country.countryCode] = {
       fillKey: calculateColor(country.priceDifference),
-      internationalName: country.internationalName,
+      title: country.title,
       priceDifference: country.formattedPriceDifference,
       convertedPrice: country.formattedConvertedPrice,
       price: country.price,
@@ -185,7 +185,7 @@ function drawBarChart(){
     .attr("height", height + margin.top + margin.bottom);
 
   x.domain(d3.extent(countries, function(d) { return d.priceDifference; })).nice();
-  y.domain(countries.map(function(d) { return d.internationalName; }));
+  y.domain(countries.map(function(d) { return d.title; }));
 
   svg.append("g")
     .attr("class", "x axis")
@@ -206,27 +206,27 @@ function drawBarChart(){
 
   bars.append("rect")
     .attr("x", function(d) { return x(Math.min(0, d.priceDifference)); })
-    .attr("y", function(d) { return y(d.internationalName); })
+    .attr("y", function(d) { return y(d.title); })
     .attr("width", function(d) { return Math.abs(x(d.priceDifference) - x(0)); })
     .attr("height", y.rangeBand());
 
   var labels = bars.append("svg:text")
     .attr("class", "label")
     .attr("x", 0)
-    .attr("y", function(d) { return y(d.internationalName); })
+    .attr("y", function(d) { return y(d.title); })
     .attr("text-anchor", "left")
-    .text(function(d) { return d.internationalName; });
+    .text(function(d) { return d.title; });
 
   var nil = svg.selectAll("g.bar.{0}".format(base.countryCode.toLowerCase()))
     .append("svg:text")
     .attr("class", "nil")
     .attr("x", x(0))
-    .attr("y", y(base.internationalName));
+    .attr("y", y(base.title));
 
   var prices = bars.append("svg:text")
     .attr("class", "price")
     .attr("x", outerWidth)
-    .attr("y", function(d) { return y(d.internationalName); })
+    .attr("y", function(d) { return y(d.title); })
     .text(function(d) {
       return d.formattedConvertedPrice;
     });
