@@ -11,6 +11,6 @@ Thanks to the following libraries:
 - [D3.js](http://d3js.org/)
 - [datamaps.js](http://datamaps.github.io/)
 - [tinycolor.js](http://bgrins.github.io/TinyColor/)
-- [restcountries.eu](http://restcountries.eu/)
-- [money.js](http://josscrowcroft.github.io/money.js/)
 - http://country.io/data/
+- https://github.com/tj/php-selector
+- https://openexchangerates.org
