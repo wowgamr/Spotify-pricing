@@ -9,6 +9,7 @@ ini_set('display_startup_errors', 1);
 
 $countrycodes = json_decode(file_get_contents('data/countries.json'), true); // get database with countries names
 $token = ''; // App ID for Open Exchange Rates
+$data = '';
 
 function getHtml($url) {
     $handle = curl_init($url);
@@ -30,6 +31,7 @@ function getPrice($url) {
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
+            $price = preg_replace('/^\./', '', $price); // fix for Switzerland
 
         }
         elseif (isset($dom->select('.specialoffer strong')[0]['text'])){ // condition for promo offer (like /ca-en/)
@@ -82,7 +84,7 @@ if ($response !== false)
 
         // todo: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3 don't remember why :D
         
-        $countries[$i] = ['title' => $countrycodes[$rel]['title'], 'rel' => $rel, /* 'code' => $countrycodes[$rel]['code'], */ 'currency' => $countrycodes[$rel]['currency'],
+        $countries[$i] = ['title' => $countrycodes[$rel]['title'], 'rel' => $rel, 'countryCode' => $countrycodes[$rel]['countryCode'], 'currency' => $countrycodes[$rel]['currency'],
         'region' => $countrycodes[$rel]['region'], 'price' => $price, 'f_price' => '', 'convertedPrice' => '', 'f_convertedPrice' => ''];
     };
 
@@ -90,8 +92,16 @@ if ($response !== false)
 
     foreach($countries as $country) {
         echo $country["title"]." | ".$country["rel"]." | ".$country["price"]." ".$country["currency"]." | ".$country["region"]."<br>";
-        // todo: write to file
+
+        $data = $data.',{"title":"'.$country["title"].'","rel":"'.$country["rel"].'","currency":"'.$country["currency"].'","countryCode":"'.$country["countryCode"].'","region":"'.$country["region"].'","price":'.$country["price"].',"f_price":0,"convertedPrice":1}';
     };
+
+    $data = substr($data, 1);
+    $data = "[".$data."]";
+
+    $file = fopen("data/summary.json", "w");
+    fwrite($file, $data);
+    fclose($file);
 }
 else {
 	echo 'Bad link';
