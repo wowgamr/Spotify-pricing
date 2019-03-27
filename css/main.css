@@ -199,7 +199,7 @@ svg.filter .bar, svg.filter path {
     opacity: 0.2
 }
 
-svg.filter.europe .europe, svg.filter.americas .americas, svg.filter.asia .asia, svg.filter.oceania .oceania {
+svg.filter.europe .europe, svg.filter.americas .americas, svg.filter.asia .asia, svg.filter.oceania .oceania, svg.filter.africa .africa {
     opacity: 1;
 }
 
