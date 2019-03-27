@@ -47,9 +47,18 @@ function fetchJSONFile(path, callback) {
 fetchJSONFile('data/summary.json', formatData);
 
 function formatData(data){
+  
   countries = data;
 
-  base = _.find(countries, {'rel': 'us'});
+  var sortByProperty = function (property) {
+    return function (x, y) {
+        return ((x[property] === y[property]) ? 0 : ((x[property] > y[property]) ? 1 : -1));
+    };
+  };
+
+  countries.sort(sortByProperty('convertedPrice')); // sort bars by convertedPrice
+
+  base = _.find(countries, {'rel': 'US'});
 
   countries = _.chain(countries)
     .unique("rel")
@@ -182,7 +191,7 @@ function drawBarChart(){
   var svg = container.append("svg")
     .attr("aria-labelledby", "bar-chart-title")
     .attr("width", outerWidth)
-    .attr("height", height + margin.top + margin.bottom);
+    .attr("height", height + margin.top + margin.bottom + 15);
 
   x.domain(d3.extent(countries, function(d) { return d.priceDifference; })).nice();
   y.domain(countries.map(function(d) { return d.title; }));
@@ -244,7 +253,7 @@ function drawBarChart(){
   labels.attr("transform", function(d) { return "translate(0, {0})".format(getYPosition(labels)); });
   nil.attr("transform", function(d) { return "translate(2, {0})".format(getYPosition(nil)); });
   prices.attr("transform", function(d) { return "translate(0, {0})".format(getYPosition(prices)); });
-  priceDefinition.attr("transform", function(d) { return "translate(-{0}, -{1})".format((getBoundaryWidth(priceDefinition) + margin.right/2), (getBoundaryHeight(priceDefinition) - 2)); });
+  priceDefinition.attr("transform", function(d) { return "translate(-{0}, 30)".format((getBoundaryWidth(priceDefinition) + margin.right/2), (getBoundaryHeight(priceDefinition) - 2)); });
 
   function getBoundaryHeight(elements){
     return elements.node().getBBox().height;
@@ -279,7 +288,6 @@ function filterContinents(d, id) {
 
   var charts = [
     "#bar-chart svg",
-    "#scatter-plot svg",
     "#map svg"
   ];
   _.each(charts, function(item) {
