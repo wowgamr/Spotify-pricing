@@ -9,6 +9,7 @@ ini_set('display_startup_errors', 1);
 
 $countrycodes = json_decode(file_get_contents('data/countries.json'), true); // get database with countries names
 $token = ''; // App ID for Open Exchange Rates
+$exchange = json_decode(file_get_contents('https://openexchangerates.org/api/latest.json?app_id='.$token), true); // get exchange rates
 $data = '';
 
 function getHtml($url) {
@@ -79,19 +80,21 @@ if ($response !== false)
         $rel = strtoupper(substr($links[$i]["attributes"]["rel"], 0, 2)); // substr 'ca-fr' to 'ca'
 
         // todo: family plan prices
-        
-        // todo: convert prices
+
+        $rate = round($exchange["rates"][$countrycodes[$rel]['currency']], 2);
+        $convertedPrice = $price/$rate;
+        $convertedPrice = round($convertedPrice, 2);
         
         $countries[$i] = ['title' => $countrycodes[$rel]['title'], 'rel' => $rel, 'countryCode' => $countrycodes[$rel]['countryCode'], 'currency' => $countrycodes[$rel]['currency'],
-        'region' => $countrycodes[$rel]['region'], 'price' => $price, 'f_price' => '', 'convertedPrice' => '', 'f_convertedPrice' => ''];
+        'region' => $countrycodes[$rel]['region'], 'price' => $price, 'f_price' => '', 'convertedPrice' => $convertedPrice, 'f_convertedPrice' => ''];
     };
 
     $countries = array_unique($countries, SORT_REGULAR);
 
     foreach($countries as $country) {
-        echo $country["title"]." | ".$country["rel"]." | ".$country["price"]." ".$country["currency"]." | ".$country["region"]."<br>";
+        echo $country["title"]." | ".$country["rel"]." | ".$country["price"]." (".$country["convertedPrice"]."$) ".$country["currency"]." | ".$country["region"]."<br>";
 
-        $data = $data.',{"title":"'.$country["title"].'","rel":"'.$country["rel"].'","currency":"'.$country["currency"].'","countryCode":"'.$country["countryCode"].'","region":"'.$country["region"].'","price":'.$country["price"].',"f_price":0,"convertedPrice":1}';
+        $data = $data.',{"title":"'.$country["title"].'","rel":"'.$country["rel"].'","currency":"'.$country["currency"].'","countryCode":"'.$country["countryCode"].'","region":"'.$country["region"].'","price":'.$country["price"].',"f_price":0,"convertedPrice":'.$country["convertedPrice"].'}';
     };
 
     $data = substr($data, 1);
