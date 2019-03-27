@@ -1448,13 +1448,13 @@
     "AW": {
         "title": "Aruba",
         "region": "Americas",
-        "countryCode": "",
+        "countryCode": "ABW",
         "currency": "AWG"
     },
     "IN": {
         "title": "India",
         "region": "Asia",
-        "countryCode": "ABW",
+        "countryCode": "IND",
         "currency": "INR"
     },
     "AX": {
