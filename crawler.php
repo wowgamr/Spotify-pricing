@@ -81,8 +81,6 @@ if ($response !== false)
         // todo: family plan prices
         
         // todo: convert prices
-
-        // todo: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3 don't remember why :D
         
         $countries[$i] = ['title' => $countrycodes[$rel]['title'], 'rel' => $rel, 'countryCode' => $countrycodes[$rel]['countryCode'], 'currency' => $countrycodes[$rel]['currency'],
         'region' => $countrycodes[$rel]['region'], 'price' => $price, 'f_price' => '', 'convertedPrice' => '', 'f_convertedPrice' => ''];
