@@ -112,9 +112,6 @@ function drawMap(){
       popupOnHover: true,
       highlightOnHover: true,
       highlightFillColor: function(geography, data){
-        if(!data)
-          return fills.defaultFill;
-
         return 'orange';
       },
       highlightBorderWidth: 0
