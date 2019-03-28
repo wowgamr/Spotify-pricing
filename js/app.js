@@ -107,7 +107,7 @@ function drawMap(){
         if(!data)
           return;
 
-        return '<div class="hoverinfo"><strong>{0}:</strong> ${1}<br>Local price: {2} {3}<br>Family plan: {2} {4}</div>'.format(data.title, data.convertedPrice, data.currency, data.price, data.f_price);
+        return '<div class="hoverinfo"><strong>{0}:</strong> $&nbsp;{1}<br>Local price: {2} {3}<br>Family plan: {2} {4}</div>'.format(data.title, data.convertedPrice, data.currency, data.price, data.f_price);
       },
       popupOnHover: true,
       highlightOnHover: true,
