@@ -247,13 +247,28 @@ function drawBarChart(){
     .attr("text-anchor", "left")
     .text("Spotify Premium price, $");
 
+  var date = new Date;
+  var month = new Array();
+  month[0] = "January";
+  month[1] = "February";
+  month[2] = "March";
+  month[3] = "April";
+  month[4] = "May";
+  month[5] = "June";
+  month[6] = "July";
+  month[7] = "August";
+  month[8] = "September";
+  month[9] = "October";
+  month[10] = "November";
+  month[11] = "December";
+
   container.append("small")
-    .text("Source: US Dollar market exchange rate, May 2014");
+    .text("Source: OpenExchangeRates, " + month[date.getMonth()] + " " + date.getFullYear());
 
   labels.attr("transform", function(d) { return "translate(0, {0})".format(getYPosition(labels)); });
   nil.attr("transform", function(d) { return "translate(2, {0})".format(getYPosition(nil)); });
   prices.attr("transform", function(d) { return "translate(0, {0})".format(getYPosition(prices)); });
-  priceDefinition.attr("transform", function(d) { return "translate(-{0}, 30)".format((getBoundaryWidth(priceDefinition) + margin.right/2), (getBoundaryHeight(priceDefinition) - 2)); });
+  priceDefinition.attr("transform", function(d) { return "translate(-170, 30)".format((getBoundaryWidth(priceDefinition) + margin.right/2), (getBoundaryHeight(priceDefinition) - 2)); });
 
   function getBoundaryHeight(elements){
     return elements.node().getBBox().height;
