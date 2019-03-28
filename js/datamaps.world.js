@@ -52,19 +52,17 @@
     }
   };
 
-  function addContainer( element, height, width ) {
+  function addContainer( element ) {
     this.svg = d3.select( element ).append('svg')
-      .attr('width', width || element.offsetWidth)
+      .attr('width', element.offsetWidth)
       .attr('class', 'datamap')
-      .attr('height', height || element.offsetHeight);
+      .attr('height', element.offsetHeight);
 
     return this.svg;
   }
 
   // setProjection takes the svg element and options
   function setProjection( element, options ) {
-    var width = options.width || element.offsetWidth;
-    var height = options.height || element.offsetHeight;
     var projection, path;
     if ( options && typeof options.scope === 'undefined') {
       options.scope = 'world';
@@ -72,13 +70,13 @@
 
     if ( options.scope === 'usa' ) {
       projection = d3.geo.albersUsa()
-        .scale(width)
-        .translate([width  / 2, height / 2]);
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
     }
     else if ( options.scope === 'world' ) {
       projection = d3.geo[options.projection]()
-        .scale((width + 1) / 2 / Math.PI)
-        .translate([width / 2, height / (options.projection === "mercator" ? 1.45 : 1.8)]);
+        .scale((element.offsetWidth + 1) / 2 / Math.PI)
+        .translate([element.offsetWidth / 2, element.offsetHeight / (options.projection === "mercator" ? 1.45 : 1.8)]);
     }
 
     path = d3.geo.path()
@@ -463,7 +461,7 @@
 
     //add the SVG container
     if ( d3.select( this.options.element ).select('svg').length > 0 ) {
-      addContainer.call(this, this.options.element, this.options.height, this.options.width );
+      addContainer.call(this, this.options.element );
     }
 
     /* Add core plugins to this instance */
