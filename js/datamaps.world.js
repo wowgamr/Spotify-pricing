@@ -12069,6 +12069,11 @@
         .html(function() {
           var data = JSON.parse(element.attr('data-info'));
           //if ( !data ) return '';
+          if (data) {
+            if (data.title == "New Zealand"){
+              position[0] = position[0] - 130;
+            }
+          }
           return options.popupTemplate(d, data);
         })
         .style('left', ( position[0]) + "px");
