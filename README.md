@@ -3,7 +3,7 @@
 ![Spotify](https://snag.gy/JPYTUp.jpg)
 
 Pricing data has load using crawler.php and Cron every Monday.
-Check out the end result here: <https://spotify.wowgamr.ru> :musical_note:
+Check out the end result here: <https://spotify.wowgamr.ru>
 
 ### Dependencies
 - [D3.js](https://d3js.org)
