@@ -14,6 +14,6 @@ Thanks to the following libraries:
 - [PHP Selector](https://github.com/tj/php-selector)
 
 ### Thanks
-@matiassingers - for base code
+- [@matiassingers](https://github.com/matiassingers) - for base code
 - [country.io](http://country.io/data/) - for country codes and names
 - [openexchangerates.org](https://openexchangerates.org) - for exchange rates
