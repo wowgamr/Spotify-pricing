@@ -1,18 +1,18 @@
-:construction: TODO: Update README :construction:
+# Spotify Premium Index
 
-# spotify-pricing
+![Spotify](https://snag.gy/JPYTUp.jpg)
 
-Check out the end result here: <http://mts.io/projects/spotify-pricing/>
+Pricing data has load using crawler.php and Cron every Monday.
+Check out the end result here: <https://spotify.wowgamr.ru>
 
-I wrote a blog post about the project: <http://mts.io/2014/05/07/spotify-pricing-index/>
+### Dependencies
+- [D3.js](https://d3js.org)
+- [datamaps.js](https://datamaps.github.io)
+- [tinycolor.js](https://bgrins.github.io/TinyColor)
+- [PHP Selector](https://github.com/tj/php-selector)
 
-### dependencies
-Pricing data was scraped using my own little Node.js crawler: [spotify-crawler](https://github.com/matiassingers/spotify-crawler)
 
-Thanks to the following libraries:
-- [D3.js](http://d3js.org/)
-- [datamaps.js](http://datamaps.github.io/)
-- [tinycolor.js](http://bgrins.github.io/TinyColor/)
-- http://country.io/data/
-- https://github.com/tj/php-selector
-- https://openexchangerates.org
+### Thanks
+- [@matiassingers](https://github.com/matiassingers) - for base code
+- [country.io](http://country.io/data/) - for country codes and names
+- [openexchangerates.org](https://openexchangerates.org) - for exchange rates
