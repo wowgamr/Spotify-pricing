@@ -72,7 +72,6 @@ if ($response !== false)
 {
     $dom = new SelectorDOM($response);
     $links = $dom->select('.select-your-country-flex li a'); // get list of countries
-    //$rates = json_decode(getHtml('https://openexchangerates.org/api/latest.json?app_id='.$token), true); // get exchange rates
 
     for ($i = 0; $i < count($links); $i++) {
     
