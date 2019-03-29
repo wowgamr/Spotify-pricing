@@ -1,6 +1,4 @@
-:construction: TODO: Update README :construction:
-
-# Spotify Premium Index
+# Spotify Premium Index :musical_note:
 
 ![Spotify](https://snag.gy/JPYTUp.jpg)
 
