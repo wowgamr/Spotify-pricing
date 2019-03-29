@@ -234,3 +234,7 @@ svg.filter.europe .europe, svg.filter.americas .americas, svg.filter.asia .asia,
 .footer p {
     font-size: 15px;
 }
+
+.footer small {
+    margin-bottom: 10px;
+}
