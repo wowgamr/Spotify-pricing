@@ -7,7 +7,7 @@ ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
-$countrycodes = json_decode(file_get_contents('data/countries.json'), true); // get database with countries names
+$countrycodes = json_decode(file_get_contents(__DIR__.'/data/countries.json'), true); // get database with countries names
 $token = ''; // App ID for Open Exchange Rates
 $exchange = json_decode(file_get_contents('https://openexchangerates.org/api/latest.json?app_id='.$token), true); // get exchange rates
 $data = '';
@@ -91,7 +91,7 @@ if ($response !== false)
     $countries = array_unique($countries, SORT_REGULAR);
 
     foreach($countries as $country) {
-        echo $country["title"]." | ".$country["rel"]." | ".$country["price"]." (".$country["convertedPrice"]."$) ".$country["currency"]." | ".$country["region"]."<br>";
+        //echo $country["title"]." | ".$country["rel"]." | ".$country["price"]." (".$country["convertedPrice"]."$) ".$country["currency"]." | ".$country["region"]."<br>";
 
         $data = $data.',{"title":"'.$country["title"].'","rel":"'.$country["rel"].'","currency":"'.$country["currency"].'","countryCode":"'.$country["countryCode"].'","region":"'.$country["region"].'","price":'.$country["price"].',"f_price":0,"convertedPrice":'.$country["convertedPrice"].'}';
     };
@@ -99,7 +99,7 @@ if ($response !== false)
     $data = substr($data, 1);
     $data = "[".$data."]";
 
-    $file = fopen("data/summary.json", "w");
+    $file = fopen(__DIR__."/data/summary.json", "w");
     fwrite($file, $data);
     fclose($file);
 }
