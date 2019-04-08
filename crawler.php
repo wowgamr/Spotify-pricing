@@ -35,8 +35,14 @@ function getPrice($url) {
             $price = preg_replace('/^\./', '', $price); // fix for Switzerland
 
         }
-        elseif (isset($dom->select('.specialoffer strong')[0]['text'])){ // condition for promo offer (like /ca-en/)
+        elseif (isset($dom->select('.specialoffer strong')[0]['text'])){ // condition for promo offers (like /ca-en/)
             $price = $dom->select('.specialoffer strong')[0]['text'];
+            $price = str_replace(',', '.', $price);
+            $price = preg_replace('/[^,.0-9]/', '', $price);
+            $price = preg_replace('/.00$/', '', $price); // beautify price
+        }
+        elseif (isset($dom->select('h4')[1]['text'])){ // temprorary hack for ca-fr
+            $price = $dom->select('h4')[1]['text'];
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
