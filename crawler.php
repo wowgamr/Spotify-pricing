@@ -47,6 +47,14 @@ function getPrice($url) {
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
         }
+        elseif (isset($dom->select('.hTvmvv')[0]['text'])){ // fix for Brasil, Colombia, Mixico promo pages
+            $price = $dom->select('.hTvmvv')[0]['text'];
+            $price = preg_replace('/\/.+/', '', $price);   
+            $price = str_replace(',', '.', $price);
+            $price = preg_replace('/[^,.0-9]/', '', $price);
+            $price = ltrim($price, '.');
+            $price = str_replace('..', '', $price);
+        }
         elseif (isset($dom->select('.iQlOYI')[0]['text'])){ // temprorary hack for India
             $price = $dom->select('.iQlOYI')[0]['text'];
             $price = preg_replace('/\/.+/', '', $price);
