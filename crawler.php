@@ -35,7 +35,7 @@ function getPrice($url) {
             $price = preg_replace('/^\./', '', $price); // fix for Switzerland
 
         }
-        elseif (isset($dom->select('.specialoffer strong')[0]['text'])){ // condition for promo offers (like /ca-en/)
+        elseif (isset($dom->select('.specialoffer strong')[0]['text'])){ // condition for promo offers
             $price = $dom->select('.specialoffer strong')[0]['text'];
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
@@ -55,8 +55,8 @@ function getPrice($url) {
             $price = ltrim($price, '.');
             $price = str_replace('..', '', $price);
         }
-        elseif (isset($dom->select('.iQlOYI')[0]['text'])){ // temprorary hack for India
-            $price = $dom->select('.iQlOYI')[0]['text'];
+        elseif (isset($dom->select('.iTuPDd')[0]['text'])){ // temprorary hack for India
+            $price = $dom->select('.iTuPDd')[0]['text'];
             $price = preg_replace('/\/.+/', '', $price);
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
