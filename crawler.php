@@ -61,15 +61,15 @@ function getPrice($url) {
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
         }
-        elseif (substr($dom->select('.market')[0]['attributes']['href'], 1, 2) == "my"){ // temprorary hack for Malaysia
+        elseif (isset($dom->select('.promotion-header p')[0]['text'])){ // promotion price
             $price = $dom->select('.promotion-header p')[0]['text'];
             $price = preg_replace('/\/.+/', '', $price);
-            $price = preg_replace('/[^,.0-9]/', '', $price);
-        }
-        elseif (isset($dom->select('.promotion-header p')[0]['text'])){ // temprorary hack for Indonesia, Philippines, Thailand and Vietnam
-            $price = $dom->select('.promotion-header p')[0]['text'];
-            $price = preg_replace('/\/.+/', '', $price);
-            $price = preg_replace('/[^0-9]/', '', $price);
+            if (substr($dom->select('.market')[0]['attributes']['href'], 1, 2) == "id") {
+                $price = preg_replace('/[^0-9]/', '', $price); // fix for Indonesia
+            }
+            else {
+                $price = preg_replace('/[^0-9\.]/', '', $price);
+            };      
         };
         
         return $price;
