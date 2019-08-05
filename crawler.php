@@ -28,8 +28,8 @@ function getPrice($url) {
         $dom = new SelectorDOM($response);
         $countrycode = substr($dom->select('.market')[0]['attributes']['href'], 1, 2);
         
-        if (isset($dom->select('.pricing h4')[0]['text'])) {
-            $price = $dom->select('.pricing h4')[0]['text']; // standart premium page
+        if (isset($dom->select('#COMPARISONS-2 h4')[0]['text'])) {
+            $price = $dom->select('#COMPARISONS-2 h4')[0]['text']; // standart premium page
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
