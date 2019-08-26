@@ -61,22 +61,13 @@ function getPrice($url) {
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
         }
-        elseif ($countrycode == "mx" || $countrycode == "co" || $countrycode == "br") {
-            if (isset($dom->select('.hdfOTW')[0]['text'])){ // fix for Brasil, Colombia, Mixico promo pages
-                $price = $dom->select('.hdfOTW')[0]['text'];
-                $price = str_replace('30 d', '', $price); // 30 dias
-                $price = str_replace('s.*', '', $price); // fix point for Colombia, Mexico
-                $price = preg_replace('/\/.+/', '', $price);
-                $price = str_replace(',', '.', $price);
-                $price = preg_replace('/[^,.0-9]/', '', $price);
-                $price = str_replace('..', '', $price);
-            }
-        }
-        elseif (isset($dom->select('.iTuPDd')[0]['text'])){ // temprorary hack for India
+        elseif (isset($dom->select('.iTuPDd')[0]['text'])){ //  India, Brasil, Colombia, Mixico promo pages
             $price = $dom->select('.iTuPDd')[0]['text'];
             $price = preg_replace('/\/.+/', '', $price);
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
+            $price = str_replace('..', '', $price); // fix for Brasil, Colombia, Mixico prices
+            $price = preg_replace('/^\./', '', $price); // fix dot at the beginning
         }
         
         elseif (isset($dom->select('.promotion-header p')[0]['text'])){ // promotion price
