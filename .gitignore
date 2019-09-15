@@ -67,3 +67,4 @@ out/
 ### SublimeText ###
 *.sublime-workspace
 *.sublime-project
+robots.txt
