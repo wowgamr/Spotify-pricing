@@ -65,6 +65,7 @@ function getPrice($url) {
             $price = $dom->select('.dpSVOk')[0]['text'];
             $price = preg_replace('/\/.+/', '', $price);
             $price = str_replace(',', '.', $price);
+            $price = str_replace('90 gün', '', $price); // fix for Turkey
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = str_replace('..', '', $price); // fix for Brasil, Colombia, Mixico prices
             $price = preg_replace('/^\./', '', $price); // fix dot at the beginning
