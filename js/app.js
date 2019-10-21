@@ -32,10 +32,19 @@ if(height < 500) {
 
 function fetchJSONFile(path, callback) {
   var httpRequest = new XMLHttpRequest();
-  httpRequest.onreadystatechange = function() {
+
+  var problems_block = document.getElementById('problems');
+  var content_block = document.getElementById('content');
+  
+  httpRequest.onreadystatechange = function () {
     if (httpRequest.readyState === 4) {
       if (httpRequest.status === 200 || httpRequest.status === 0) {
-        var data = JSON.parse(httpRequest.responseText);
+        try {
+          var data = JSON.parse(httpRequest.responseText);
+        } catch (e) {
+          content_block.style.display = 'none';
+          problems_block.style.display = 'block';
+        }
         if (callback) callback(data);
       }
     }
