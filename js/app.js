@@ -276,7 +276,8 @@ function drawBarChart(){
 };
 
 function calculateHeight(){
-  return 270 / 649 * window.innerWidth;
+  var content_width = document.getElementById('content').clientWidth;
+  return 270 / 649 * (content_width * 1.25);
 }
 function calculateWidth(){
   return 649 / 270 * window.innerHeight;
