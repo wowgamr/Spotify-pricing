@@ -33,45 +33,27 @@ function getPrice($url) {
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
-            $price = preg_replace('/^\./', '', $price); // fix for Switzerland
         }
-        elseif (isset($dom->select('.specialoffer strong')[0]['text'])){ // condition for promo offers
-            $price = $dom->select('.specialoffer strong')[0]['text'];
+        elseif (isset($dom->select('.productCard_title strong')[1]['text'])){ // condition for promo pages
+            $price = $dom->select('.productCard_title strong')[1]['text'];
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
         }
-        elseif (isset($dom->select('h4')[1]['text'])){ // temprorary hack for ca-fr
-            $price = $dom->select('h4')[1]['text'];
-            $price = str_replace(',', '.', $price);
-            $price = preg_replace('/[^,.0-9]/', '', $price);
-            $price = preg_replace('/.00$/', '', $price); // beautify price
-        }
-        elseif (isset($dom->select('.gAUGsr')[0]['text'])){
-            $price = $dom->select('.gAUGsr')[0]['text'];
+        elseif (isset($dom->select('.krvsBc')[0]['text'])){
+            $price = $dom->select('.krvsBc')[0]['text'];
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = ltrim($price, '.');
             $price = str_replace('..', '', $price);
         }
-        elseif (isset($dom->select('.specialoffer strong')[0]['text'])){ // condition for promo offers
-            $price = $dom->select('.specialoffer strong')[0]['text'];
-            $price = str_replace(',', '.', $price);
-            $price = preg_replace('/[^,.0-9]/', '', $price);
-            $price = preg_replace('/.00$/', '', $price); // beautify price
-        }
-        elseif (isset($dom->select('.dpSVOk')[0]['text'])){ //  India, Brasil, Colombia, Mixico promo pages
-            $price = $dom->select('.dpSVOk')[0]['text'];
+        elseif (isset($dom->select('.cyIhvi')[0]['text'])){ //  India, Brasil, Colombia, Mixico promo pages
+            $price = $dom->select('.cyIhvi')[0]['text'];
             $price = str_replace(',', '.', $price);
             $price = str_replace('90 gün', '', $price); // fix for Turkey
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = str_replace('..', '', $price); // fix for Brasil, Colombia, Mixico prices
             $price = preg_replace('/^\./', '', $price); // fix dot at the beginning
-        }
-        
-        elseif (isset($dom->select('.promotion-header p')[0]['text'])){ // promotion price
-            $price = $dom->select('.promotion-header p')[0]['text'];
-            $price = preg_replace('/[^,.0-9]/', '', $price);      
         };
         
         return $price;
