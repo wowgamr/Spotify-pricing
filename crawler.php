@@ -40,19 +40,19 @@ function getPrice($url) {
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
         }
-        elseif (isset($dom->select('.krvsBc')[0]['text'])){
-            $price = $dom->select('.krvsBc')[0]['text'];
+        elseif (isset($dom->select('.bRPFxA')[0]['text'])){
+            $price = $dom->select('.bRPFxA')[0]['text'];
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = ltrim($price, '.');
             $price = str_replace('..', '', $price);
         }
-        elseif (isset($dom->select('.cyIhvi')[0]['text'])){ //  India, Brasil, Colombia, Mixico promo pages
-            $price = $dom->select('.cyIhvi')[0]['text'];
+        elseif (isset($dom->select('.bwycrh')[0]['text'])){ //  India, Colombia, Mixico promo pages
+            $price = $dom->select('.bwycrh')[0]['text'];
             $price = str_replace(',', '.', $price);
             $price = str_replace('90 gün', '', $price); // fix for Turkey
             $price = preg_replace('/[^,.0-9]/', '', $price);
-            $price = str_replace('..', '', $price); // fix for Brasil, Colombia, Mixico prices
+            $price = str_replace('..', '', $price); // fix for Colombia, Mixico prices
             $price = preg_replace('/^\./', '', $price); // fix dot at the beginning
         };
         
