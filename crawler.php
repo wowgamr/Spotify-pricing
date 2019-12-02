@@ -45,6 +45,7 @@ function getPrice($url) {
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = ltrim($price, '.');
+            $price = rtrim($price, '.');
             $price = str_replace('..', '', $price);
         }
         elseif (isset($dom->select('.bwycrh')[0]['text'])){ //  India, Colombia, Mixico promo pages
@@ -62,6 +63,21 @@ function getPrice($url) {
         echo 'Bad link';
     };
     sleep(1); // timeout because of anti ddos
+}
+
+function unique_multidim_array($array, $key) {
+    $temp_array = array();
+    $i = 0;
+    $key_array = array();
+   
+    foreach($array as $val) {
+        if (!in_array($val[$key], $key_array)) {
+            $key_array[$i] = $val[$key];
+            $temp_array[$i] = $val;
+        }
+        $i++;
+    }
+    return $temp_array;
 }
 
 $response = getHtml('https://www.spotify.com/us/select-your-country/');
@@ -86,7 +102,7 @@ if ($response !== false)
         'region' => $countrycodes[$rel]['region'], 'price' => $price, 'f_price' => '', 'convertedPrice' => $convertedPrice, 'f_convertedPrice' => ''];
     };
 
-    $countries = array_unique($countries, SORT_REGULAR);
+    $countries = unique_multidim_array($countries, "rel");
 
     foreach($countries as $country) {
         //echo $country["title"]." | ".$country["rel"]." | ".$country["price"]." (".$country["convertedPrice"]."$) ".$country["currency"]." | ".$country["region"]."<br>";
