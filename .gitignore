@@ -68,3 +68,4 @@ out/
 *.sublime-workspace
 *.sublime-project
 robots.txt
+data/summary.json
