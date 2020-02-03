@@ -40,8 +40,8 @@ function getPrice($url) {
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
         }
-        elseif (isset($dom->select('.gXBLqf')[0]['text'])){
-            $price = $dom->select('.gXBLqf')[0]['text'];
+        elseif (isset($dom->select('.kduFOt')[0]['text'])){
+            $price = $dom->select('.kduFOt')[0]['text'];
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = ltrim($price, '.');
