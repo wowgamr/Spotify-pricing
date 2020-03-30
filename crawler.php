@@ -40,16 +40,16 @@ function getPrice($url) {
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
         }
-        elseif (isset($dom->select('.kduFOt')[0]['text'])){
-            $price = $dom->select('.kduFOt')[0]['text'];
+        elseif (isset($dom->select('.bsRGkV')[0]['text'])){
+            $price = $dom->select('.bsRGkV')[0]['text'];
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = ltrim($price, '.');
             $price = rtrim($price, '.');
             $price = str_replace('..', '', $price);
         }
-        elseif (isset($dom->select('.bwycrh')[0]['text'])){ //  India, Colombia, Mixico promo pages
-            $price = $dom->select('.bwycrh')[0]['text'];
+        elseif (isset($dom->select('.cmQliW')[0]['text'])){ //  India, Colombia, Mixico promo pages
+            $price = $dom->select('.cmQliW')[0]['text'];
             $price = str_replace(',', '.', $price);
             $price = str_replace('3 ay', '', $price); // fix for Turkey
             $price = preg_replace('/[^,.0-9]/', '', $price);
