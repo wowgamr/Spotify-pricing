@@ -34,8 +34,8 @@ function getPrice($url) {
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
         }
-        elseif (isset($dom->select('.productCard_title strong')[1]['text'])){ // condition for promo pages
-            $price = $dom->select('.productCard_title strong')[1]['text'];
+        elseif (isset($dom->select('h2')['text'])){ // condition for promo pages
+            $price = $dom->select('h2')['text'];
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
