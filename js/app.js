@@ -257,7 +257,7 @@ function drawBarChart(){
     .text("Spotify Premium price, $");
 
   container.append("small")
-    .html("Source: OpenExchangeRates<br>Exchange rates updates every monday at 00:00 (UTC+3)");
+    .html("Source: OpenExchangeRates<br>Exchange rates updates every monday at 09:00 (UTC+3)");
 
   labels.attr("transform", function(d) { return "translate(0, {0})".format(getYPosition(labels)); });
   nil.attr("transform", function(d) { return "translate(2, {0})".format(getYPosition(nil)); });
