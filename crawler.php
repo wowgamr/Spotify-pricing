@@ -49,6 +49,14 @@ function getPrice($url) {
             $price = rtrim($price, '.');
             $price = str_replace('..', '', $price);
         }
+        elseif (isset($dom->select('.bJYaEr')[0]['text'])){
+            $price = $dom->select('.bJYaEr')[0]['text'];
+            $price = str_replace(',', '.', $price);
+            $price = preg_replace('/[^,.0-9]/', '', $price);
+            $price = ltrim($price, '.');
+            $price = rtrim($price, '.');
+            $price = str_replace('..', '', $price);
+        }
         elseif (isset($dom->select('.jfMcol')[0]['text'])){ //  India, Colombia, Mixico promo pages
             $price = $dom->select('.jfMcol')[0]['text'];
             $price = str_replace(',', '.', $price);
