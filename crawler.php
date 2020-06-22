@@ -15,7 +15,8 @@ $data = '';
 function getHtml($url) {
     $handle = curl_init($url);
     curl_setopt($handle, CURLOPT_RETURNTRANSFER, TRUE);
-    curl_setopt($handle, CURLOPT_FOLLOWLOCATION,1);
+    curl_setopt($handle, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($handle, CURLOPT_FRESH_CONNECT, TRUE);
     $response = curl_exec($handle);
     $httpCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);
     curl_close($handle);
