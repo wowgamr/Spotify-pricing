@@ -52,10 +52,8 @@ function getPrice($url) {
         elseif (isset($dom->select('.kBPJSk')[0]['text'])){ //  Vietnam premium page
             $price = $dom->select('.kBPJSk')[0]['text'];
             $price = str_replace(',', '.', $price);
-            $price = str_replace('3 ay', '', $price); // fix for Turkey
             $price = preg_replace('/[^,.0-9]/', '', $price);
-            $price = str_replace('..', '', $price); // fix for Colombia, Mixico prices
-            $price = preg_replace('/^\./', '', $price); // fix dot at the beginning
+            $price = str_replace('..', '', $price);
         };
 
         return $price;
