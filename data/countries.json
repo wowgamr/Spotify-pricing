@@ -27,7 +27,7 @@
         "title": "Bosnia and Herzegovina",
         "region": "Europe",
         "countryCode": "BIH",
-        "currency": "BAM"
+        "currency": "EUR"
     },
     "BB": {
         "title": "Barbados",
@@ -141,7 +141,7 @@
         "title": "Belarus",
         "region": "Europe",
         "countryCode": "BLR",
-        "currency": "BYR"
+        "currency": "USD"
     },
     "BZ": {
         "title": "Belize",
@@ -165,7 +165,7 @@
         "title": "Serbia",
         "region": "Europe",
         "countryCode": "SRB",
-        "currency": "RSD"
+        "currency": "EUR"
     },
     "TL": {
         "title": "East Timor",
@@ -351,7 +351,7 @@
         "title": "Croatia",
         "region": "Europe",
         "countryCode": "HRV",
-        "currency": "HRK"
+        "currency": "EUR"
     },
     "HT": {
         "title": "Haiti",
@@ -585,7 +585,7 @@
         "title": "Moldova",
         "region": "Europe",
         "countryCode": "MDA",
-        "currency": "MDL"
+        "currency": "USD"
     },
     "MG": {
         "title": "Madagascar",
@@ -651,7 +651,7 @@
         "title": "Macedonia",
         "region": "Europe",
         "countryCode": "MKD",
-        "currency": "MKD"
+        "currency": "EUR"
     },
     "MU": {
         "title": "Mauritius",
@@ -1113,7 +1113,7 @@
         "title": "Kazakhstan",
         "region": "Asia",
         "countryCode": "KAZ",
-        "currency": "KZT"
+        "currency": "USD"
     },
     "KY": {
         "title": "Cayman Islands",
@@ -1407,7 +1407,7 @@
         "title": "Albania",
         "region": "Europe",
         "countryCode": "ALB",
-        "currency": "ALL"
+        "currency": "EUR"
     },
     "AO": {
         "title": "Angola",
@@ -1485,7 +1485,7 @@
         "title": "Ukraine",
         "region": "Europe",
         "countryCode": "UKR",
-        "currency": "UAH"
+        "currency": "USD"
     },
     "QA": {
         "title": "Qatar",
