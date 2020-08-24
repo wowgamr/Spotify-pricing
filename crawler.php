@@ -79,12 +79,12 @@ function unique_multidim_array($array, $key) {
     return $temp_array;
 }
 
-$response = getHtml('https://www.spotify.com/us/select-your-country/');
+$response = getHtml('https://www.spotify.com/us/select-your-market/');
 
 if ($response !== false)
 {
     $dom = new SelectorDOM($response);
-    $links = $dom->select('.select-your-country-flex li a'); // get list of countries
+    $links = $dom->select('.select-your-market-flex li a'); // get list of countries
 
     for ($i = 0; $i < count($links); $i++) {
     
