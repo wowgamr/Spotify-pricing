@@ -41,16 +41,16 @@ function getPrice($url) {
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
         }
-        elseif (isset($dom->select('.sc-pIjat')[0]['text'])){
-            $price = $dom->select('.sc-pIjat')[0]['text'];
+        elseif (isset($dom->select('.sc-oUOMp')[0]['text'])){
+            $price = $dom->select('.sc-oUOMp')[0]['text'];
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = ltrim($price, '.');
             $price = rtrim($price, '.');
             $price = str_replace('..', '', $price);
         }
-        elseif (isset($dom->select('.sc-pbYBj')[0]['text'])){ //  Vietnam premium page
-            $price = $dom->select('.sc-pbYBj')[0]['text'];
+        elseif (isset($dom->select('.sc-qPwPv')[0]['text'])){ //  Vietnam premium page
+            $price = $dom->select('.sc-qPwPv')[0]['text'];
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = str_replace('..', '', $price);
