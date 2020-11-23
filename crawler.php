@@ -27,7 +27,7 @@ function getPrice($url) {
     $response = getHtml($url);
     if ($response !== false)    {
         $dom = new SelectorDOM($response);
-        $countrycode = substr($dom->select('.market')[0]['attributes']['href'], 1, 2);
+        //$countrycode = substr($dom->select('.market')[0]['attributes']['href'], 1, 2);
         
         if (isset($dom->select('#PLANS h4')[0]['text'])) {
             $price = $dom->select('#PLANS h4')[0]['text']; // standart premium page
