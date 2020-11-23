@@ -41,8 +41,17 @@ function getPrice($url) {
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = preg_replace('/.00$/', '', $price); // beautify price
         }
-        elseif (isset($dom->select('.sc-oUOMp')[0]['text'])){
-            $price = $dom->select('.sc-oUOMp')[0]['text'];
+        elseif (isset($dom->select('.sc-plVjM')[0]['text'])){
+            $price = $dom->select('.sc-plVjM')[0]['text'];
+            $price = str_replace('12 months', '', $price); // fix for India promo offer
+            $price = str_replace(',', '.', $price);
+            $price = preg_replace('/[^,.0-9]/', '', $price);
+            $price = ltrim($price, '.');
+            $price = rtrim($price, '.');
+            $price = str_replace('..', '', $price);
+        }
+        elseif (isset($dom->select('.sc-hJFzDP')[0]['text'])){ // temporary fix for Iceland
+            $price = $dom->select('.sc-hJFzDP')[0]['text'];
             $price = str_replace(',', '.', $price);
             $price = preg_replace('/[^,.0-9]/', '', $price);
             $price = ltrim($price, '.');
