@@ -25,10 +25,8 @@ function getHtml($url) {
 
 function getPrice($url, $rel) {
     $response = getHtml($url);
-    if ($response !== false)    {
+    if ($response !== false) {
         $dom = new SelectorDOM($response);
-        //$countrycode = substr($dom->select('.market')[0]['attributes']['href'], 1, 2);
-        
 
         if (($rel == 'IN' || $rel == 'ID') && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // India and Indonesia have daily plans, so we take second block
             $price = $dom->select('div[data-current-plan-text]')[1]['children'][2]['text'];
@@ -76,12 +74,12 @@ if ($response !== false)
 
     for ($i = 0; $i < count($links); $i++) {
     
-        $rel = strtoupper(substr($links[$i]["attributes"]["rel"], 0, 2)); // substr 'ca-fr' to 'ca'
-        $price = getPrice('https://www.spotify.com/'.$links[$i]["attributes"]["rel"].'/premium/', $rel);
+        $rel = strtoupper(substr($links[$i]['attributes']['rel'], 0, 2)); // substr 'ca-fr' to 'ca'
+        $price = getPrice('https://www.spotify.com/'.$links[$i]['attributes']['rel'].'/premium/', $rel);
 
         // todo: family plan prices
 
-        $rate = round($exchange["rates"][$countrycodes[$rel]['currency']], 2);
+        $rate = round($exchange['rates'][$countrycodes[$rel]['currency']], 2);
         $convertedPrice = $price/$rate;
         $convertedPrice = round($convertedPrice, 2);
         
@@ -89,18 +87,16 @@ if ($response !== false)
         'region' => $countrycodes[$rel]['region'], 'price' => $price, 'f_price' => '', 'convertedPrice' => $convertedPrice, 'f_convertedPrice' => ''];
     };
 
-    $countries = unique_multidim_array($countries, "rel");
+    $countries = unique_multidim_array($countries, 'rel');
 
     foreach($countries as $country) {
-        //echo $country["title"]." | ".$country["rel"]." | ".$country["price"]." (".$country["convertedPrice"]."$) ".$country["currency"]." | ".$country["region"]."<br>";
-
-        $data = $data.',{"title":"'.$country["title"].'","rel":"'.$country["rel"].'","currency":"'.$country["currency"].'","countryCode":"'.$country["countryCode"].'","region":"'.$country["region"].'","price":'.$country["price"].',"f_price":0,"convertedPrice":'.$country["convertedPrice"].'}';
+        $data = $data.',{"title":"'.$country['title'].'","rel":"'.$country['rel'].'","currency":"'.$country['currency'].'","countryCode":"'.$country['countryCode'].'","region":"'.$country['region'].'","price":'.$country['price'].',"f_price":0,"convertedPrice":'.$country['convertedPrice'].'}';
     };
 
     $data = substr($data, 1);
-    $data = "[".$data."]";
+    $data = '['.$data.']';
 
-    $file = fopen(__DIR__."/data/summary.json", "w");
+    $file = fopen(__DIR__.'/data/summary.json', 'w');
     fwrite($file, $data);
     fclose($file);
 }
