@@ -23,7 +23,7 @@ function getHtml($url) {
     return $response;
 }
 
-function getPrice($url) {
+function getPrice($url, $rel) {
     $response = getHtml($url);
     if ($response !== false)    {
         $dom = new SelectorDOM($response);
@@ -97,8 +97,8 @@ if ($response !== false)
 
     for ($i = 0; $i < count($links); $i++) {
     
-        $price = getPrice('https://www.spotify.com/'.$links[$i]["attributes"]["rel"].'/premium/');
         $rel = strtoupper(substr($links[$i]["attributes"]["rel"], 0, 2)); // substr 'ca-fr' to 'ca'
+        $price = getPrice('https://www.spotify.com/'.$links[$i]["attributes"]["rel"].'/premium/', $rel);
 
         // todo: family plan prices
 
