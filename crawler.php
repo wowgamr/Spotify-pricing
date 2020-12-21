@@ -29,42 +29,21 @@ function getPrice($url, $rel) {
         $dom = new SelectorDOM($response);
         //$countrycode = substr($dom->select('.market')[0]['attributes']['href'], 1, 2);
         
-        if (isset($dom->select('#PLANS h4')[0]['text'])) {
-            $price = $dom->select('#PLANS h4')[0]['text']; // standart premium page
-            $price = str_replace(',', '.', $price);
-            $price = preg_replace('/[^,.0-9]/', '', $price);
-            $price = preg_replace('/.00$/', '', $price); // beautify price
+
+        if (($rel == 'IN' || $rel == 'ID') && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // India and Indonesia have daily plans, so we take second block
+            $price = $dom->select('div[data-current-plan-text]')[1]['children'][2]['text'];
         }
-        elseif (isset($dom->select('h2')['text'])){ // condition for promo pages
-            $price = $dom->select('h2')['text'];
-            $price = str_replace(',', '.', $price);
-            $price = preg_replace('/[^,.0-9]/', '', $price);
-            $price = preg_replace('/.00$/', '', $price); // beautify price
+        elseif ($rel == 'VN' && isset($dom->select('#PLANS h3')[0]['text'])) { // Vietnam page is unical
+            $price = $dom->select('#PLANS h3')[0]['text'];
         }
-        elseif (isset($dom->select('.sc-plVjM')[0]['text'])){
-            $price = $dom->select('.sc-plVjM')[0]['text'];
-            $price = str_replace('12 months', '', $price); // fix for India promo offer
-            $price = str_replace(',', '.', $price);
-            $price = preg_replace('/[^,.0-9]/', '', $price);
-            $price = ltrim($price, '.');
-            $price = rtrim($price, '.');
-            $price = str_replace('..', '', $price);
-        }
-        elseif (isset($dom->select('.sc-hJFzDP')[0]['text'])){ // temporary fix for Iceland
-            $price = $dom->select('.sc-hJFzDP')[0]['text'];
-            $price = str_replace(',', '.', $price);
-            $price = preg_replace('/[^,.0-9]/', '', $price);
-            $price = ltrim($price, '.');
-            $price = rtrim($price, '.');
-            $price = str_replace('..', '', $price);
-        }
-        elseif (isset($dom->select('.sc-qPwPv')[0]['text'])){ //  Vietnam premium page
-            $price = $dom->select('.sc-qPwPv')[0]['text'];
-            $price = str_replace(',', '.', $price);
-            $price = preg_replace('/[^,.0-9]/', '', $price);
-            $price = str_replace('..', '', $price);
+        elseif (isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Standard pages
+            $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
         };
 
+        $price = str_replace(',', '.', $price);
+        $price = preg_replace('/[^,.0-9]/', '', $price);
+        $price = ltrim($price, '.');
+        $price = rtrim($price, '.');
         return $price;
     }
     else {
