@@ -34,6 +34,9 @@ function getPrice($url, $rel) {
         elseif ($rel == 'VN' && isset($dom->select('#PLANS h3')[0]['text'])) { // Vietnam page is unical
             $price = $dom->select('#PLANS h3')[0]['text'];
         }
+        elseif ($rel == 'IS' && isset($dom->select('div[data-current-plan-text]')[0]['children'][3]['text'])) { // Temporary fix for Iceland
+            $price = $dom->select('div[data-current-plan-text]')[0]['children'][3]['text'];
+        }
         elseif (isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Standard pages
             $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
         };
