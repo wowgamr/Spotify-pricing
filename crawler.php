@@ -45,6 +45,9 @@ function getPrice($url, $rel) {
         $price = preg_replace('/[^,.0-9]/', '', $price);
         $price = ltrim($price, '.');
         $price = rtrim($price, '.');
+        if ($rel == 'KR') {
+            $price = str_replace('.', '', $price);
+        };
         return $price;
     }
     else {
