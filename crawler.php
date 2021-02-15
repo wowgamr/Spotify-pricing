@@ -31,11 +31,11 @@ function getPrice($url, $rel) {
         if (($rel == 'IN' || $rel == 'ID') && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // India and Indonesia have daily plans, so we take second block
             $price = $dom->select('div[data-current-plan-text]')[1]['children'][2]['text'];
         }
-        elseif ($rel == 'VN' && isset($dom->select('#PLANS h3')[0]['text'])) { // Vietnam page is unical
-            $price = $dom->select('#PLANS h3')[0]['text'];
+        elseif ($rel == 'VN' && isset($dom->select('#plans h3')[0]['text'])) { // Vietnam page is unical
+            $price = $dom->select('#plans h3')[0]['text'];
         }
-        elseif (($rel == 'IS' || $rel == 'DK' || $rel == 'NO' )&& isset($dom->select('div[data-current-plan-text]')[0]['children'][3]['text'])) { // Temporary fix for Iceland, Norway and Denmark
-            $price = $dom->select('div[data-current-plan-text]')[0]['children'][3]['text'];
+        elseif (($rel == 'IS' || $rel == 'DK' || $rel == 'NO' )&& isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Temporary fix for Iceland, Norway and Denmark
+            $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
         }
         elseif (isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Standard pages
             $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
