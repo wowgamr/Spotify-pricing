@@ -37,6 +37,9 @@ function getPrice($url, $rel) {
         elseif (($rel == 'IS' || $rel == 'DK' || $rel == 'NO' )&& isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Temporary fix for Iceland, Norway and Denmark
             $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
         }
+        elseif ($rel == 'UK' && isset($dom->select('div[data-current-plan-text]')[2]['children'][2]['text'])) { // Temporary fix for UK
+            $price = $dom->select('div[data-current-plan-text]')[2]['children'][2]['text'];
+        }
         elseif (isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Standard pages
             $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
         };
