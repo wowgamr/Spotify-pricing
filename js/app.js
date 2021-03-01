@@ -17,10 +17,15 @@ var mapElement = d3.select("#map")
 
 var mapWidth = parseInt(mapElement.style('width'));
 
+if (mapWidth < 750) {
+  var mapRatio = 15;
+} else {
+  var mapRatio = 2.7;
+};
+
 var margin = {top: 10, right: 75, bottom: 10, left: 150},
   width = mapWidth,
   width = width - margin.left - margin.right,
-  mapRatio = 1.5,
   height = width * mapRatio - margin.top - margin.bottom;
 
 if(height < 500) {
