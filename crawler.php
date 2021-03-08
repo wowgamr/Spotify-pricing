@@ -51,6 +51,10 @@ function getPrice($url, $rel) {
         $price = preg_replace('/[^,.0-9]/', '', $price);
         $price = ltrim($price, '.');
         $price = rtrim($price, '.');
+        if ($rel == 'CL' || $rel == 'CO' || $rel == 'TZ' || $rel == 'UG') {
+            $price = preg_replace('/00/', '', $price, 1);
+            $price = str_replace('.', '', $price);
+        }
         if ($rel == 'KR') {
             $price = str_replace('.', '', $price);
         };
