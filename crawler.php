@@ -28,7 +28,10 @@ function getPrice($url, $rel) {
     if ($response !== false) {
         $dom = new SelectorDOM($response);
 
-        if (($rel == 'IN' || $rel == 'ID') && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // India and Indonesia have daily plans, so we take second block
+        if (($rel == 'ID') && isset($dom->select('div[data-current-plan-text]')[1]['children'][3]['text'])){ // Indonesia have daily plans, so we take second block
+            $price = $dom->select('div[data-current-plan-text]')[1]['children'][3]['text'];
+        }
+        if (($rel == 'IN' ) && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // India have daily plans, so we take second block
             $price = $dom->select('div[data-current-plan-text]')[1]['children'][2]['text'];
         }
         elseif ($rel == 'VN' && isset($dom->select('#plans h3')[0]['text'])) { // Vietnam page is unical
