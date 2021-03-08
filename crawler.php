@@ -40,6 +40,9 @@ function getPrice($url, $rel) {
         elseif (($rel == 'IS' || $rel == 'DK' || $rel == 'NO' )&& isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Temporary fix for Iceland, Norway and Denmark
             $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
         }
+        elseif (isset($dom->select('h2')[0]['text'])) { // Temporary fix for new markets with one tariff plan
+            $price = $dom->select('h2')[0]['text'];
+        }
         elseif (isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Standard pages
             $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
         };
