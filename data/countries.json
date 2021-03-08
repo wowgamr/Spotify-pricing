@@ -15,7 +15,7 @@
         "title": "Burkina Faso",
         "region": "Africa",
         "countryCode": "BFA",
-        "currency": "XOF"
+        "currency": "USD"
     },
     "BG": {
         "title": "Bulgaria",
@@ -33,7 +33,7 @@
         "title": "Barbados",
         "region": "Americas",
         "countryCode": "BRB",
-        "currency": "BBD"
+        "currency": "USD"
     },
     "WF": {
         "title": "Wallis and Futuna",
@@ -57,7 +57,7 @@
         "title": "Brunei",
         "region": "Asia",
         "countryCode": "BRN",
-        "currency": "BND"
+        "currency": "USD"
     },
     "BO": {
         "title": "Bolivia",
@@ -75,7 +75,7 @@
         "title": "Burundi",
         "region": "Africa",
         "countryCode": "BDI",
-        "currency": "BIF"
+        "currency": "USD"
     },
     "BJ": {
         "title": "Benin",
@@ -87,13 +87,13 @@
         "title": "Bhutan",
         "region": "Asia",
         "countryCode": "BTN",
-        "currency": "BTN"
+        "currency": "USD"
     },
     "JM": {
         "title": "Jamaica",
         "region": "Americas",
         "countryCode": "JAM",
-        "currency": "JMD"
+        "currency": "USD"
     },
     "BV": {
         "title": "Bouvet Island",
@@ -105,13 +105,13 @@
         "title": "Botswana",
         "region": "Africa",
         "countryCode": "BWA",
-        "currency": "BWP"
+        "currency": "USD"
     },
     "WS": {
         "title": "Samoa",
         "region": "Oceania",
         "countryCode": "WSM",
-        "currency": "WST"
+        "currency": "USD"
     },
     "BQ": {
         "title": "Bonaire, Saint Eustatius and Saba ",
@@ -129,7 +129,7 @@
         "title": "Bahamas",
         "region": "Americas",
         "countryCode": "BHS",
-        "currency": "BSD"
+        "currency": "USD"
     },
     "JE": {
         "title": "Jersey",
@@ -147,7 +147,7 @@
         "title": "Belize",
         "region": "Americas",
         "countryCode": "BLZ",
-        "currency": "BZD"
+        "currency": "USD"
     },
     "RU": {
         "title": "Russia",
@@ -159,7 +159,7 @@
         "title": "Rwanda",
         "region": "Africa",
         "countryCode": "RWA",
-        "currency": "RWF"
+        "currency": "USD"
     },
     "RS": {
         "title": "Serbia",
@@ -207,7 +207,7 @@
         "title": "Guinea-Bissau",
         "region": "Africa",
         "countryCode": "GNB",
-        "currency": "XOF"
+        "currency": "USD"
     },
     "GU": {
         "title": "Guam",
@@ -237,7 +237,7 @@
         "title": "Equatorial Guinea",
         "region": "Africa",
         "countryCode": "GNQ",
-        "currency": "XAF"
+        "currency": "USD"
     },
     "GP": {
         "title": "Guadeloupe",
@@ -255,7 +255,7 @@
         "title": "Guyana",
         "region": "Americas",
         "countryCode": "GUY",
-        "currency": "GYD"
+        "currency": "USD"
     },
     "GG": {
         "title": "Guernsey",
@@ -273,13 +273,13 @@
         "title": "Georgia",
         "region": "Asia",
         "countryCode": "GEO",
-        "currency": "GEL"
+        "currency": "USD"
     },
     "GD": {
         "title": "Grenada",
         "region": "Americas",
         "countryCode": "GRD",
-        "currency": "XCD"
+        "currency": "USD"
     },
     "UK": {
         "title": "United Kingdom",
@@ -291,7 +291,7 @@
         "title": "Gabon",
         "region": "Africa",
         "countryCode": "GAB",
-        "currency": "XAF"
+        "currency": "USD"
     },
     "SV": {
         "title": "El Salvador",
@@ -303,13 +303,13 @@
         "title": "Guinea",
         "region": "Africa",
         "countryCode": "GIN",
-        "currency": "GNF"
+        "currency": "USD"
     },
     "GM": {
         "title": "Gambia",
         "region": "Africa",
         "countryCode": "GMB",
-        "currency": "GMD"
+        "currency": "USD"
     },
     "GL": {
         "title": "Greenland",
@@ -357,7 +357,7 @@
         "title": "Haiti",
         "region": "Americas",
         "countryCode": "HTI",
-        "currency": "HTG"
+        "currency": "USD"
     },
     "HU": {
         "title": "Hungary",
@@ -447,7 +447,7 @@
         "title": "Papua New Guinea",
         "region": "Oceania",
         "countryCode": "PNG",
-        "currency": "PGK"
+        "currency": "USD"
     },
     "PE": {
         "title": "Peru",
@@ -537,7 +537,7 @@
         "title": "Solomon Islands",
         "region": "Oceania",
         "countryCode": "SLB",
-        "currency": "SBD"
+        "currency": "USD"
     },
     "ET": {
         "title": "Ethiopia",
@@ -555,7 +555,7 @@
         "title": "Zimbabwe",
         "region": "Africa",
         "countryCode": "ZWE",
-        "currency": "ZWL"
+        "currency": "USD"
     },
     "SA": {
         "title": "Saudi Arabia",
@@ -615,7 +615,7 @@
         "title": "Uzbekistan",
         "region": "Asia",
         "countryCode": "UZB",
-        "currency": "UZS"
+        "currency": "USD"
     },
     "MM": {
         "title": "Myanmar",
@@ -627,19 +627,19 @@
         "title": "Mali",
         "region": "Africa",
         "countryCode": "MLI",
-        "currency": "XOF"
+        "currency": "USD"
     },
     "MO": {
         "title": "Macao",
         "region": "Asia",
         "countryCode": "MAC",
-        "currency": "MOP"
+        "currency": "USD"
     },
     "MN": {
         "title": "Mongolia",
         "region": "Asia",
         "countryCode": "MNG",
-        "currency": "MNT"
+        "currency": "USD"
     },
     "MH": {
         "title": "Marshall Islands",
@@ -669,13 +669,13 @@
         "title": "Malawi",
         "region": "Africa",
         "countryCode": "MWI",
-        "currency": "MWK"
+        "currency": "USD"
     },
     "MV": {
         "title": "Maldives",
         "region": "Asia",
         "countryCode": "MDV",
-        "currency": "MVR"
+        "currency": "USD"
     },
     "MQ": {
         "title": "Martinique",
@@ -699,7 +699,7 @@
         "title": "Mauritania",
         "region": "Africa",
         "countryCode": "MRT",
-        "currency": "MRO"
+        "currency": "USD"
     },
     "IM": {
         "title": "Isle of Man",
@@ -765,7 +765,7 @@
         "title": "Fiji",
         "region": "Oceania",
         "countryCode": "FJI",
-        "currency": "FJD"
+        "currency": "USD"
     },
     "FK": {
         "title": "Falkland Islands",
@@ -807,13 +807,13 @@
         "title": "Namibia",
         "region": "Africa",
         "countryCode": "NAM",
-        "currency": "NAD"
+        "currency": "USD"
     },
     "VU": {
         "title": "Vanuatu",
         "region": "Oceania",
         "countryCode": "VUT",
-        "currency": "VUV"
+        "currency": "USD"
     },
     "NC": {
         "title": "New Caledonia",
@@ -825,7 +825,7 @@
         "title": "Niger",
         "region": "Africa",
         "countryCode": "NER",
-        "currency": "XOF"
+        "currency": "USD"
     },
     "NF": {
         "title": "Norfolk Island",
@@ -849,7 +849,7 @@
         "title": "Nepal",
         "region": "Asia",
         "countryCode": "NPL",
-        "currency": "NPR"
+        "currency": "USD"
     },
     "NR": {
         "title": "Nauru",
@@ -903,7 +903,7 @@
         "title": "Cameroon",
         "region": "Africa",
         "countryCode": "CMR",
-        "currency": "XAF"
+        "currency": "USD"
     },
     "CL": {
         "title": "Chile",
@@ -969,13 +969,13 @@
         "title": "Curacao",
         "region": "Americas",
         "countryCode": "CUW",
-        "currency": "ANG"
+        "currency": "USD"
     },
     "CV": {
         "title": "Cape Verde",
         "region": "Africa",
         "countryCode": "CPV",
-        "currency": "CVE"
+        "currency": "USD"
     },
     "CU": {
         "title": "Cuba",
@@ -987,7 +987,7 @@
         "title": "Eswatini",
         "region": "Africa",
         "countryCode": "SWZ",
-        "currency": "SZL"
+        "currency": "USD"
     },
     "SY": {
         "title": "Syria",
@@ -1005,7 +1005,7 @@
         "title": "Kyrgyzstan",
         "region": "Asia",
         "countryCode": "KGZ",
-        "currency": "KGS"
+        "currency": "USD"
     },
     "KE": {
         "title": "Kenya",
@@ -1023,7 +1023,7 @@
         "title": "Suriname",
         "region": "Americas",
         "countryCode": "SUR",
-        "currency": "SRD"
+        "currency": "USD"
     },
     "KI": {
         "title": "Kiribati",
@@ -1035,25 +1035,25 @@
         "title": "Cambodia",
         "region": "Asia",
         "countryCode": "KHM",
-        "currency": "KHR"
+        "currency": "USD"
     },
     "KN": {
         "title": "Saint Kitts and Nevis",
         "region": "Americas",
         "countryCode": "KNA",
-        "currency": "XCD"
+        "currency": "USD"
     },
     "KM": {
         "title": "Comoros",
         "region": "Africa",
         "countryCode": "COM",
-        "currency": "KMF"
+        "currency": "USD"
     },
     "ST": {
         "title": "Sao Tome and Principe",
         "region": "Africa",
         "countryCode": "STP",
-        "currency": "STD"
+        "currency": "USD"
     },
     "SK": {
         "title": "Slovakia",
@@ -1089,7 +1089,7 @@
         "title": "Senegal",
         "region": "Africa",
         "countryCode": "SEN",
-        "currency": "XOF"
+        "currency": "USD"
     },
     "SM": {
         "title": "San Marino",
@@ -1101,13 +1101,13 @@
         "title": "Sierra Leone",
         "region": "Africa",
         "countryCode": "SLE",
-        "currency": "SLL"
+        "currency": "USD"
     },
     "SC": {
         "title": "Seychelles",
         "region": "Africa",
         "countryCode": "SYC",
-        "currency": "SCR"
+        "currency": "USD"
     },
     "KZ": {
         "title": "Kazakhstan",
@@ -1149,7 +1149,7 @@
         "title": "Dominica",
         "region": "Americas",
         "countryCode": "DMA",
-        "currency": "XCD"
+        "currency": "USD"
     },
     "DJ": {
         "title": "Djibouti",
@@ -1221,13 +1221,13 @@
         "title": "Saint Lucia",
         "region": "Americas",
         "countryCode": "LCA",
-        "currency": "XCD"
+        "currency": "USD"
     },
     "LA": {
         "title": "Laos",
         "region": "Asia",
         "countryCode": "LAO",
-        "currency": "LAK"
+        "currency": "USD"
     },
     "TV": {
         "title": "Tuvalu",
@@ -1245,7 +1245,7 @@
         "title": "Trinidad and Tobago",
         "region": "Americas",
         "countryCode": "TTO",
-        "currency": "TTD"
+        "currency": "USD"
     },
     "TR": {
         "title": "Turkey",
@@ -1275,7 +1275,7 @@
         "title": "Tonga",
         "region": "Oceania",
         "countryCode": "TON",
-        "currency": "TOP"
+        "currency": "USD"
     },
     "LT": {
         "title": "Lithuania",
@@ -1293,13 +1293,13 @@
         "title": "Liberia",
         "region": "Africa",
         "countryCode": "LBR",
-        "currency": "LRD"
+        "currency": "USD"
     },
     "LS": {
         "title": "Lesotho",
         "region": "Africa",
         "countryCode": "LSO",
-        "currency": "LSL"
+        "currency": "USD"
     },
     "TH": {
         "title": "Thailand",
@@ -1317,13 +1317,13 @@
         "title": "Togo",
         "region": "Africa",
         "countryCode": "TGO",
-        "currency": "XOF"
+        "currency": "USD"
     },
     "TD": {
         "title": "Chad",
         "region": "Africa",
         "countryCode": "TCD",
-        "currency": "XAF"
+        "currency": "USD"
     },
     "TC": {
         "title": "Turks and Caicos Islands",
@@ -1347,7 +1347,7 @@
         "title": "Saint Vincent and the Grenadines",
         "region": "Americas",
         "countryCode": "VCT",
-        "currency": "XCD"
+        "currency": "USD"
     },
     "AE": {
         "title": "United Arab Emirates",
@@ -1365,7 +1365,7 @@
         "title": "Antigua and Barbuda",
         "region": "Americas",
         "countryCode": "ATG",
-        "currency": "XCD"
+        "currency": "USD"
     },
     "AF": {
         "title": "Afghanistan",
@@ -1401,7 +1401,7 @@
         "title": "Armenia",
         "region": "Asia",
         "countryCode": "ARM",
-        "currency": "AMD"
+        "currency": "USD"
     },
     "AL": {
         "title": "Albania",
@@ -1467,7 +1467,7 @@
         "title": "Azerbaijan",
         "region": "Asia",
         "countryCode": "AZE",
-        "currency": "AZN"
+        "currency": "USD"
     },
     "IE": {
         "title": "Ireland",
