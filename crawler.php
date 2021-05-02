@@ -28,34 +28,32 @@ function getPrice($url, $rel) {
     if ($response !== false) {
         $dom = new SelectorDOM($response);
 
-        if (($rel == 'ID') && isset($dom->select('div[data-current-plan-text]')[1]['children'][3]['text'])){ // Indonesia have daily plans, so we take second block
-            $price = $dom->select('div[data-current-plan-text]')[1]['children'][3]['text'];
-        }
-        if (($rel == 'IN' ) && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // India have daily plans, so we take second block
+
+        if (($rel == 'IN' || $rel == 'ID') && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // India have daily plans, so we take second block
             $price = $dom->select('div[data-current-plan-text]')[1]['children'][2]['text'];
         }
         elseif ($rel == 'VN' && isset($dom->select('#plans h3')[0]['text'])) { // Vietnam page is unical
             $price = $dom->select('#plans h3')[0]['text'];
         }
-        elseif (($rel == 'IS' || $rel == 'DK' || $rel == 'NO' )&& isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Temporary fix for Iceland, Norway and Denmark
+        elseif (($rel == 'KR') && isset($dom->select('div[data-current-plan-text]')[0]['children'][3]['text'])) { // Temporary fix for South Korea
+            $price = $dom->select('div[data-current-plan-text]')[0]['children'][3]['text'];
+        }
+        elseif (isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Standard pages
             $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
         }
         elseif (isset($dom->select('h2')[0]['text'])) { // Temporary fix for new markets with one tariff plan
             $price = $dom->select('h2')[0]['text'];
-        }
-        elseif (isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Standard pages
-            $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
         };
 
         $price = str_replace(',', '.', $price);
         $price = preg_replace('/[^,.0-9]/', '', $price);
         $price = ltrim($price, '.');
         $price = rtrim($price, '.');
-        if ($rel == 'CL' || $rel == 'CO' || $rel == 'TZ' || $rel == 'UG') {
+        if ($rel == 'CL' || $rel == 'CO') {
             $price = preg_replace('/00/', '', $price, 1);
             $price = str_replace('.', '', $price);
-        }
-        if ($rel == 'KR') {
+        };
+        if ($rel == 'TZ' || $rel == 'UG' || $rel == 'KR' || $rel == 'ID') {
             $price = str_replace('.', '', $price);
         };
         return $price;
