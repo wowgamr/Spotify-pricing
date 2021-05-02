@@ -81,7 +81,7 @@
         "title": "Benin",
         "region": "Africa",
         "countryCode": "BEN",
-        "currency": "XOF"
+        "currency": "USD"
     },
     "BT": {
         "title": "Bhutan",
@@ -489,7 +489,7 @@
         "title": "Zambia",
         "region": "Africa",
         "countryCode": "ZMB",
-        "currency": "ZMK"
+        "currency": "USD"
     },
     "EH": {
         "title": "Western Sahara",
@@ -591,7 +591,7 @@
         "title": "Madagascar",
         "region": "Africa",
         "countryCode": "MDG",
-        "currency": "MGA"
+        "currency": "USD"
     },
     "MF": {
         "title": "Saint Martin",
@@ -657,7 +657,7 @@
         "title": "Mauritius",
         "region": "Africa",
         "countryCode": "MUS",
-        "currency": "MUR"
+        "currency": "USD"
     },
     "MT": {
         "title": "Malta",
@@ -879,7 +879,7 @@
         "title": "Ivory Coast",
         "region": "Africa",
         "countryCode": "CIV",
-        "currency": "XOF"
+        "currency": "USD"
     },
     "CH": {
         "title": "Switzerland",
@@ -1155,7 +1155,7 @@
         "title": "Djibouti",
         "region": "Africa",
         "countryCode": "DJI",
-        "currency": "DJF"
+        "currency": "USD"
     },
     "DK": {
         "title": "Denmark",
@@ -1413,7 +1413,7 @@
         "title": "Angola",
         "region": "Africa",
         "countryCode": "AGO",
-        "currency": "AOA"
+        "currency": "USD"
     },
     "AQ": {
         "title": "Antarctica",
@@ -1497,6 +1497,6 @@
         "title": "Mozambique",
         "region": "Africa",
         "countryCode": "MOZ",
-        "currency": "MZN"
+        "currency": "USD"
     }
 }
