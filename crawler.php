@@ -28,7 +28,6 @@ function getPrice($url, $rel) {
     if ($response !== false) {
         $dom = new SelectorDOM($response);
 
-
         if (($rel == 'IN' || $rel == 'ID') && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // India have daily plans, so we take second block
             $price = $dom->select('div[data-current-plan-text]')[1]['children'][2]['text'];
         }
@@ -79,17 +78,17 @@ function unique_multidim_array($array, $key) {
     return $temp_array;
 }
 
-$response = getHtml('https://www.spotify.com/us/select-your-market/');
+$response = getHtml('https://www.spotify.com/us/select-your-country-region/');
 
 if ($response !== false)
 {
     $dom = new SelectorDOM($response);
-    $links = $dom->select('.select-your-market-flex li a'); // get list of countries
+    $links = $dom->select('.RegionsContainer__StyledRegionsContainer-sc-31iq33-0 li a'); // get list of countries
 
     for ($i = 0; $i < count($links); $i++) {
     
-        $rel = strtoupper(substr($links[$i]['attributes']['rel'], 0, 2)); // substr 'ca-fr' to 'ca'
-        $price = getPrice('https://www.spotify.com/'.$links[$i]['attributes']['rel'].'/premium/', $rel);
+        $rel = strtoupper(substr($links[$i]['attributes']['href'], 1, 2)); // substr 'ca-fr' to 'ca'
+        $price = getPrice('https://www.spotify.com'.$links[$i]['attributes']['href'].'premium/', $rel);
 
         // todo: family plan prices
 
