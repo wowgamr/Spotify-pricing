@@ -78,7 +78,7 @@ $response = getHtml('https://www.spotify.com/us/select-your-country-region/');
 if ($response !== false)
 {
     $dom = new SelectorDOM($response);
-    $links = $dom->select('.RegionsContainer__StyledRegionsContainer-sc-31iq33-0 li a'); // get list of countries
+    $links = $dom->select('.encore-light-theme li a'); // get list of countries
 
     for ($i = 0; $i < count($links); $i++) {
     
