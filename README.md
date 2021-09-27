@@ -1,6 +1,6 @@
 # Spotify Premium Index
 
-![Spotify](https://snag.gy/JPYTUp.jpg)
+![Spotify](https://i.snipboard.io/CPYwFy.jpg)
 
 Pricing data is loaded using crawler.php and Cron every Monday.
 Check out the end result here: <https://spotify.wowgamr.ru>
