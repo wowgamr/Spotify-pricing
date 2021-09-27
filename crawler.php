@@ -55,7 +55,7 @@ function getPrice($url, $rel) {
     else {
         echo 'Bad link';
     };
-    sleep(1); // timeout because of anti ddos
+    sleep(0.5); // timeout because of anti ddos
 }
 
 function unique_multidim_array($array, $key) {
