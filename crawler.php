@@ -32,9 +32,6 @@ function getPrice($url, $rel) {
         && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // Some countries have daily plans, so we take second block
             $price = $dom->select('div[data-current-plan-text]')[1]['children'][2]['text'];
         }
-        elseif (($rel == 'KR') && isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Temporary fix for South Korea
-            $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
-        }
         elseif (isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Standard pages
             $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
         }
