@@ -13,13 +13,14 @@ $exchange = json_decode(file_get_contents('https://openexchangerates.org/api/lat
 $data = '';
 
 function getHtml($url) {
-    $handle = curl_init($url);
-    curl_setopt($handle, CURLOPT_RETURNTRANSFER, TRUE);
-    curl_setopt($handle, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($handle, CURLOPT_FRESH_CONNECT, TRUE);
-    $response = curl_exec($handle);
-    $httpCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);
-    curl_close($handle);
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($ch, CURLOPT_FRESH_CONNECT, TRUE);
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36');
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
     return $response;
 }
 
@@ -55,7 +56,7 @@ function getPrice($url, $rel) {
     else {
         echo 'Bad link';
     };
-    sleep(0.5); // timeout because of anti ddos
+    sleep(1); // timeout because of anti ddos
 }
 
 function unique_multidim_array($array, $key) {
