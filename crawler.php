@@ -29,7 +29,7 @@ function getPrice($url, $rel) {
     if ($response !== false) {
         $dom = new SelectorDOM($response);
 
-        if (($rel == 'IN' || $rel == 'ID' || $rel == 'VN' || $rel == 'BD' || $rel == 'PH' || $rel == 'TH' || $rel == 'MY' || $rel == 'KE' || $rel == 'EG' || $rel == 'CO')
+        if (($rel == 'ID' || $rel == 'VN' || $rel == 'BD' || $rel == 'PH' || $rel == 'TH' || $rel == 'MY' || $rel == 'KE' || $rel == 'EG' || $rel == 'CO')
         && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // Some countries have daily plans, so we take second block
             $price = $dom->select('div[data-current-plan-text]')[1]['children'][2]['text'];
         }
@@ -47,6 +47,10 @@ function getPrice($url, $rel) {
         if ($rel == 'CL' || $rel == 'CO') {
             $price = preg_replace('/00/', '', $price, 1);
             $price = str_replace('.', '', $price);
+        };
+        if ($rel == 'IN') {
+            $price = rtrim($price, '12');
+            $price = $price / 12;
         };
         if ($rel == 'TZ' || $rel == 'UG' || $rel == 'KR' || $rel == 'ID' || $rel == 'VN') {
             $price = str_replace('.', '', $price);
