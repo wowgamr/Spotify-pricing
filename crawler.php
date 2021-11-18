@@ -48,7 +48,7 @@ function getPrice($url, $rel) {
             $price = preg_replace('/00/', '', $price, 1);
             $price = str_replace('.', '', $price);
         };
-        if ($rel == 'TZ' || $rel == 'UG' || $rel == 'KR' || $rel == 'ID' || $rel == 'VN') {
+        if ($rel == 'TZ' || $rel == 'UG' || $rel == 'KR' || $rel == 'ID' || $rel == 'VN' || $rel == 'IQ') {
             $price = str_replace('.', '', $price);
         };
         return $price;
