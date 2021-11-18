@@ -189,7 +189,7 @@
         "title": "Tajikistan",
         "region": "Asia",
         "countryCode": "TJK",
-        "currency": "TJS"
+        "currency": "USD"
     },
     "RO": {
         "title": "Romania",
@@ -387,7 +387,7 @@
         "title": "Venezuela",
         "region": "Americas",
         "countryCode": "VEN",
-        "currency": "VEF"
+        "currency": "USD"
     },
     "PR": {
         "title": "Puerto Rico",
@@ -927,7 +927,7 @@
         "title": "Republic of the Congo",
         "region": "Africa",
         "countryCode": "COG",
-        "currency": "XAF"
+        "currency": "USD"
     },
     "CF": {
         "title": "Central African Republic",
@@ -939,7 +939,7 @@
         "title": "Democratic Republic of the Congo",
         "region": "Africa",
         "countryCode": "COD",
-        "currency": "CDF"
+        "currency": "USD"
     },
     "CZ": {
         "title": "Czech Republic",
@@ -1335,7 +1335,7 @@
         "title": "Libya",
         "region": "Africa",
         "countryCode": "LBY",
-        "currency": "LYD"
+        "currency": "USD"
     },
     "VA": {
         "title": "Vatican",
