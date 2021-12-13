@@ -33,17 +33,25 @@ function getPrice($url, $rel) {
         && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // Some countries have daily plans, so we take second block
             $price = $dom->select('div[data-current-plan-text]')[1]['children'][2]['text'];
         }
+        elseif (($rel == 'BI' || $rel == 'CD' || $rel == 'CG' || $rel == 'DJ' || $rel == 'KM' || $rel == 'LY' || $rel == 'MG' || $rel == 'NE' || $rel == 'TD' || $rel == 'TJ' || $rel == 'TL' || $rel == 'KI'
+        || $rel == 'NR' || $rel == 'TV' || $rel == 'GM' || $rel == 'GQ' || $rel == 'GW' || $rel == 'LR' || $rel == 'MR' || $rel == 'MU' || $rel == 'SC' || $rel == 'ST' || $rel == 'AG' || $rel == 'CW' || $rel == 'SM'
+        || $rel == 'DM' || $rel == 'GD' || $rel == 'KN' || $rel == 'LC' || $rel == 'VC' || $rel == 'FM' || $rel == 'MH' || $rel == 'PW' || $rel == 'SB' || $rel == 'TO' || $rel == 'TV' || $rel == 'VU' || $rel == 'WS')
+        && isset($dom->select('h2')[0]['text'])){
+            $price = $dom->select('h2')[0]['text'];
+        }
         elseif (isset($dom->select('div[data-current-plan-text]')[0]['children'][2]['text'])) { // Standard pages
             $price = $dom->select('div[data-current-plan-text]')[0]['children'][2]['text'];
         }
-        elseif (isset($dom->select('h2')[0]['text'])) { // Temporary fix for new markets with one tariff plan
-            $price = $dom->select('h2')[0]['text'];
+        elseif (isset($dom->select('footer')[0]['children'][0]['text'])) { // Temporary fix for new markets with one tariff plan
+            $price = $dom->select('footer')[0]['children'][0]['text'];
         };
 
         $price = str_replace(',', '.', $price);
         $price = preg_replace('/[^,.0-9]/', '', $price);
         $price = ltrim($price, '.');
         $price = rtrim($price, '.');
+        $price = str_replace('...312021', '', $price);
+        $price = str_replace('..312021', '', $price);
         if ($rel == 'CL' || $rel == 'CO') {
             $price = preg_replace('/00/', '', $price, 1);
             $price = str_replace('.', '', $price);
