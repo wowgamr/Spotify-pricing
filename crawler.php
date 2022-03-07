@@ -84,6 +84,11 @@ if ($response !== false)
     for ($i = 0; $i < count($links); $i++) {
     
         $rel = strtoupper(substr($links[$i]['attributes']['href'], 1, 2)); // substr 'ca-fr' to 'ca'
+
+        if ($rel == 'RU'){
+            continue;
+        };
+
         $price = getPrice('https://www.spotify.com'.$links[$i]['attributes']['href'].'premium/', $rel);
 
         // todo: family plan prices
