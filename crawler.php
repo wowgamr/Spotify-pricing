@@ -29,7 +29,8 @@ function getPrice($url, $rel) {
     if ($response !== false) {
         $dom = new SelectorDOM($response);
 
-        if (($rel == 'ID' || $rel == 'VN' || $rel == 'BD' || $rel == 'PH' || $rel == 'TH' || $rel == 'MY' || $rel == 'KE' || $rel == 'EG' || $rel == 'CO' || $rel == 'PK' || $rel == 'LK')
+        if (($rel == 'ID' || $rel == 'VN' || $rel == 'BD' || $rel == 'PH' || $rel == 'TH' || $rel == 'MY' || $rel == 'KE' || $rel == 'EG' || $rel == 'CO' || $rel == 'PK'
+        || $rel == 'LK' || $rel == 'IN' || $rel == 'ZA' || $rel == 'SA' || $rel == 'TR')
         && isset($dom->select('div[data-current-plan-text]')[1]['children'][2]['text'])){ // Some countries have daily plans, so we take second block
             $price = $dom->select('div[data-current-plan-text]')[1]['children'][2]['text'];
         }
@@ -91,6 +92,7 @@ if ($response !== false)
 
         $price = getPrice('https://www.spotify.com'.$links[$i]['attributes']['href'].'premium/', $rel);
 
+        // todo: duo prices
         // todo: family plan prices
 
         $rate = round($exchange['rates'][$countrycodes[$rel]['currency']], 2);
