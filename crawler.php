@@ -112,9 +112,15 @@ if ($response !== false)
     $data = substr($data, 1);
     $data = '['.$data.']';
 
-    $file = fopen(__DIR__.'/data/summary.json', 'w');
-    fwrite($file, $data);
-    fclose($file);
+    $check_data = json_decode($data);
+    if (json_last_error() === JSON_ERROR_NONE) {
+        $file = fopen(__DIR__.'/data/summary.json', 'w');
+        fwrite($file, $data);
+        fclose($file);
+    }
+    else {
+        echo "JSON not valid";
+    };
 }
 else {
 	echo 'Bad link';
