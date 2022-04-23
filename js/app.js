@@ -9,6 +9,7 @@ String.prototype.format = function () {
 
 var countries;
 var base;
+var last_updated;
 
 var container = d3.select(".container");
 
@@ -46,6 +47,8 @@ function fetchJSONFile(path, callback) {
       if (httpRequest.status === 200 || httpRequest.status === 0) {
         try {
           var data = JSON.parse(httpRequest.responseText);
+          last_updated = httpRequest.getResponseHeader('last-modified');
+          last_updated = new Date(last_updated).toLocaleString('en-us', {year:"numeric", month:"short", day:"numeric"}) 
         } catch (e) {
           content_block.style.display = 'none';
           problems_block.style.display = 'block';
@@ -262,7 +265,7 @@ function drawBarChart(){
     .text("Spotify Premium price, $");
 
   container.append("small")
-    .html("Source: OpenExchangeRates<br>Exchange rates updates every monday at 09:00 (UTC+3)");
+    .html("Source: OpenExchangeRates<br>Exchange rates updates every monday at 09:00 (UTC+3)<br>Last update: " + last_updated);
 
   labels.attr("transform", function(d) { return "translate(0, {0})".format(getYPosition(labels)); });
   nil.attr("transform", function(d) { return "translate(2, {0})".format(getYPosition(nil)); });
