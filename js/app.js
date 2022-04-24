@@ -88,6 +88,13 @@ function formatData(data){
       country.formattedPriceDifference = (Math.round(difference * 100) / 100).toFixed(2);
       country.formattedConvertedPrice = (Math.round(country.convertedPrice * 100) / 100).toFixed(2);
 
+      if (country.restoredPrice == 1){
+        country.restoredPrice = '*';
+      }
+      else {
+        country.restoredPrice = '';
+      };
+
       country.class = country.priceDifference < 0 ? "bar negative" : "bar positive";
       country.class = "{0} {1} {2}".format(country.class, country.region.toLowerCase(), country.countryCode.toLowerCase());
 
@@ -254,7 +261,7 @@ function drawBarChart(){
     .attr("x", outerWidth)
     .attr("y", function(d) { return y(d.title); })
     .text(function(d) {
-      return d.formattedConvertedPrice;
+      return d.formattedConvertedPrice + d.restoredPrice;
     });
 
   var priceDefinition = svg.append("svg:text")
@@ -265,7 +272,8 @@ function drawBarChart(){
     .text("Spotify Premium price, $");
 
   container.append("small")
-    .html("Source: OpenExchangeRates<br>Exchange rates updates every monday at 09:00 (UTC+3)<br>Last update: " + last_updated);
+    .html("Source: OpenExchangeRates<br>Exchange rates updates every monday at 09:00 (UTC+3)<br>Last update: " + last_updated +
+    "<br><br>* - Unable to update price from Spotify, so last known was used. The dollar-converted price has been updated based on it.");
 
   labels.attr("transform", function(d) { return "translate(0, {0})".format(getYPosition(labels)); });
   nil.attr("transform", function(d) { return "translate(2, {0})".format(getYPosition(nil)); });

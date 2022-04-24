@@ -8,6 +8,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
 $countrycodes = json_decode(file_get_contents(__DIR__.'/data/countries.json'), true); // get database with countries names
+$summary = json_decode(file_get_contents(__DIR__.'/data/summary.json'), true); // load existing prices
 $token = ''; // App ID for Open Exchange Rates
 $exchange = json_decode(file_get_contents('https://openexchangerates.org/api/latest.json?app_id='.$token), true); // get exchange rates
 $data = '';
@@ -83,8 +84,8 @@ if ($response !== false)
     $links = $dom->select('.encore-light-theme li a'); // get list of countries
 
     for ($i = 0; $i < count($links); $i++) {
-    
-        $rel = strtoupper(substr($links[$i]['attributes']['href'], 1, 2)); // substr 'ca-fr' to 'ca'
+        $restoredPrice = false;
+        $rel = strtoupper(substr($links[$i]['attributes']['href'], 1, 2)); // substr 'ca-fr' to 'CA'
 
         if ($rel == 'RU'){
             continue;
@@ -95,18 +96,27 @@ if ($response !== false)
         // todo: duo prices
         // todo: family plan prices
 
+        if ($price == NULL){
+            $summary_tmp = current(array_filter($summary, function($summary) use ($rel) {
+                return $summary['rel'] == $rel;
+            }));
+            $price = $summary_tmp['price'];
+            $restoredPrice = true;
+        };
+
         $rate = round($exchange['rates'][$countrycodes[$rel]['currency']], 2);
         $convertedPrice = $price/$rate;
         $convertedPrice = round($convertedPrice, 2);
         
         $countries[$i] = ['title' => $countrycodes[$rel]['title'], 'rel' => $rel, 'countryCode' => $countrycodes[$rel]['countryCode'], 'currency' => $countrycodes[$rel]['currency'],
-        'region' => $countrycodes[$rel]['region'], 'price' => $price, 'f_price' => '', 'convertedPrice' => $convertedPrice, 'f_convertedPrice' => ''];
+        'region' => $countrycodes[$rel]['region'], 'restoredPrice' => $restoredPrice, 'price' => $price, 'f_price' => '', 'convertedPrice' => $convertedPrice, 'f_convertedPrice' => ''];
     };
 
     $countries = unique_multidim_array($countries, 'rel');
 
     foreach($countries as $country) {
-        $data = $data.',{"title":"'.$country['title'].'","rel":"'.$country['rel'].'","currency":"'.$country['currency'].'","countryCode":"'.$country['countryCode'].'","region":"'.$country['region'].'","price":'.$country['price'].',"f_price":0,"convertedPrice":'.$country['convertedPrice'].'}';
+        $data = $data.',{"title":"'.$country['title'].'","rel":"'.$country['rel'].'","currency":"'.$country['currency'].'","countryCode":"'.$country['countryCode'].
+            '","region":"'.$country['region'].'","restoredPrice":'.$country['restoredPrice'].',"price":'.$country['price'].',"f_price":0,"convertedPrice":'.$country['convertedPrice'].'}';
     };
 
     $data = substr($data, 1);
