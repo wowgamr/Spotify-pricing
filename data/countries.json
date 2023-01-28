@@ -21,7 +21,7 @@
         "title": "Bulgaria",
         "region": "Europe",
         "countryCode": "BGR",
-        "currency": "EUR"
+        "currency": "BGN"
     },
     "BA": {
         "title": "Bosnia and Herzegovina",
@@ -339,7 +339,7 @@
         "title": "Tunisia",
         "region": "Africa",
         "countryCode": "TUN",
-        "currency": "USD"
+        "currency": "TND"
     },
     "JO": {
         "title": "Jordan",
@@ -543,7 +543,7 @@
         "title": "Ethiopia",
         "region": "Africa",
         "countryCode": "ETH",
-        "currency": "ETB"
+        "currency": "USD"
     },
     "SO": {
         "title": "Somalia",
@@ -603,7 +603,7 @@
         "title": "Morocco",
         "region": "Africa",
         "countryCode": "MAR",
-        "currency": "USD"
+        "currency": "MAD"
     },
     "MC": {
         "title": "Monaco",
