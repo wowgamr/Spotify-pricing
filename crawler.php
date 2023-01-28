@@ -76,7 +76,9 @@ function unique_multidim_array($array, $key) {
     return $temp_array;
 }
 
-$response = getHtml('https://www.spotify.com/us/select-your-country-region/');
+/* Fix Russia block
+$response = getHtml('https://www.spotify.com/us/select-your-country-region/'); */
+$response = getHtml('https://spotify.wowgamr.ru/data/countries.html');
 
 if ($response !== false)
 {
@@ -91,7 +93,9 @@ if ($response !== false)
             continue;
         };
 
-        $price = getPrice('https://www.spotify.com'.$links[$i]['attributes']['href'].'premium/', $rel);
+        /* Fix Russia block
+        $price = getPrice('https://www.spotify.com'.$links[$i]['attributes']['href'].'premium/', $rel); */
+        $price = NULL;
 
         // todo: duo prices
         // todo: family plan prices
